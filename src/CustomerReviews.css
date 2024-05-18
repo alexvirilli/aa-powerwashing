@@ -1,0 +1,41 @@
+.review-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .review {
+    border-bottom: 1px solid #ddd;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .review:last-child {
+    border-bottom: none;
+  }
+  
+  .review h3 {
+    color: #333;
+    font-size: 18px;
+    margin: 0 0 5px;
+  }
+  
+  .review span {
+    font-weight: normal;
+    color: #666;
+    font-size: 16px;
+  }
+  
+  .review p {
+    margin: 5px 0;
+    line-height: 1.5;
+  }
+  
+  .review p:last-child {
+    font-weight: bold;
+    color: #444;
+  }
+  
