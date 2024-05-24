@@ -72,9 +72,9 @@ function Home() {
                 <h2>Featured Work</h2>
                 <div>
                     <ImageComparison beforeImage={before1} afterImage={after1} />
+                    {/* <ImageComparison />
                     <ImageComparison />
-                    <ImageComparison />
-                    <ImageComparison />
+                    <ImageComparison /> */}
                 </div>
             </section>
             <section className="testimonials">
