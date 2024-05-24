@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 import ImageComparison from './ImageComparison';
 import CustomerReviews from './CustomerReviews';
 import AccordionItem from './AccordionItem';
-import test2 from './test2.jpeg';
-import test3 from './test3.jpeg';
+import before1 from './images/before1.jpeg';
+import after1 from './images/after1.jpeg';
 import { Helmet } from 'react-helmet';
 
 function Home() {
@@ -71,7 +71,7 @@ function Home() {
             <section className="featured-work">
                 <h2>Featured Work</h2>
                 <div>
-                    <ImageComparison beforeImage={test2} afterImage={test3} />
+                    <ImageComparison beforeImage={before1} afterImage={after1} />
                     <ImageComparison />
                     <ImageComparison />
                     <ImageComparison />
@@ -88,7 +88,7 @@ function Home() {
                     Our pricing is competitive and based on the specific needs of each job. We offer free estimates, so please contact us to get a customized quote for your project.
                 </AccordionItem>
                 <AccordionItem title="How do I schedule a powerwashing service?">
-                    You can schedule a service by calling us at (856) 665-2279, emailing us at info@aapowerwashing.com, or filling out the contact form on our website. We will get back to you promptly to arrange an appointment.
+                    You can schedule a service by calling us at (856) 281-2658, emailing us at aapowerwashers@gmail.com, or filling out the contact form on our website. We will get back to you promptly to arrange an appointment.
                 </AccordionItem>
                 <AccordionItem title="What areas do you serve?">
                     We serve New Jersey, primarily New Brunswick, Cherry Hill, and the surrounding regions. If you are unsure whether we service your area, please contact us, and we’ll be happy to assist.

@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
 
 body {
   font-family: 'Source Sans 3', sans-serif;
   background-color: #f0f4f8;
   margin: 0;
   padding: 0;
-  height: 100vh;
+  height: 130vh;
 }
 
 .contact {
@@ -23,6 +22,19 @@ body {
   color: #007BFF;
   font-size: 28px;
   margin-bottom: 20px;
+}
+
+.disclaimer h2 {
+  color: #cd4d44
+}
+
+.disclaimer strong {
+  color: #007BFF
+}
+
+.disclaimer h3 {
+  text-align: center;
+  color: #cd4d44
 }
 
 .contact form {

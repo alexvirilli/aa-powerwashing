@@ -7,9 +7,9 @@ import "slick-carousel/slick/slick-theme.css";
 const reviews = [
   {
     id: 1,
-    name: "John Doe",
-    date: "April 15, 2024",
-    content: "The service was fantastic! Very professional and thorough. Highly recommend.",
+    name: "Christopher Eyre",
+    date: "May 23, 2024",
+    content: "They showed up on time and they did a great job on our driveway and sidewalk.  Will definitely use them again.",
     rating: 5
   },
   {

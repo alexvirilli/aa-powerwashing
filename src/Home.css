@@ -9,7 +9,7 @@ body, html {
 }
 
 .hero {
-    background: url('./images/bg-hero3.jpeg') no-repeat center center;
+    background: url('./images/hero.jpeg') no-repeat center center;
     background-size: cover;
     color: #f9f9f9;
     text-align: center;
