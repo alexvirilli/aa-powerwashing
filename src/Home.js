@@ -6,6 +6,14 @@ import CustomerReviews from './CustomerReviews';
 import AccordionItem from './AccordionItem';
 import before1 from './images/before1.jpeg';
 import after1 from './images/after1.jpeg';
+import before2 from './images/before2.jpeg';
+import after2 from './images/after2.jpeg'
+import before3 from './images/before3.jpeg';
+import after3 from './images/after3.jpeg'
+import before4 from './images/before4.jpeg';
+import after4 from './images/after4.jpeg';
+import before5 from './images/before5.jpeg';
+import after5 from './images/after5.jpeg';
 import { Helmet } from 'react-helmet';
 
 function Home() {
@@ -71,7 +79,13 @@ function Home() {
             <section className="featured-work">
                 <h2>Featured Work</h2>
                 <div>
+
+                    <ImageComparison beforeImage={before2} afterImage={after2} />
+                    <ImageComparison beforeImage={before3} afterImage={after3} />
+                    <ImageComparison beforeImage={before4} afterImage={after4} />
+
                     <ImageComparison beforeImage={before1} afterImage={after1} />
+                    <ImageComparison beforeImage={before5} afterImage={after5} />
                     {/* <ImageComparison />
                     <ImageComparison />
                     <ImageComparison /> */}

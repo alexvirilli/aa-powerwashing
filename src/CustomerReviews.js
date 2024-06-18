@@ -14,17 +14,17 @@ const reviews = [
   },
   {
     id: 2,
-    name: "Jane Smith",
-    date: "April 20, 2024",
-    content: "Incredible results on our deck and driveway. They look brand new!",
+    name: "Sara Trindade",
+    date: "June 11, 2024",
+    content: "They did our walkway, patio, deck and deck furniture. They came on time when they said they would, spent all day working hard, everything looks bright and so much better. Good price for the amount of time and effort they put in. Will use them again!",
     rating: 5
   },
   {
     id: 3,
-    name: "Alice Johnson",
-    date: "April 22, 2024",
-    content: "Very satisfied with the power washing. Quick and efficient!",
-    rating: 4
+    name: "Dan Reiss",
+    date: "June 10, 2024",
+    content: "They showed up on time, did a very deep clean and worked with me to move a bunch of bulky items out of the way. Everything looks bright and new again. I would hire them again next year.",
+    rating: 5
   },
 ];
 

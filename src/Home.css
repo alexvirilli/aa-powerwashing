@@ -9,7 +9,7 @@ body, html {
 }
 
 .hero {
-    background: url('./images/hero.jpeg') no-repeat center center;
+    background: url('./images/banner.jpeg') no-repeat center center;
     background-size: cover;
     color: #f9f9f9;
     text-align: center;
@@ -24,7 +24,7 @@ body, html {
 }
 
 .hero-overlay {
-    background: rgba(0, 0, 0, 0.85); 
+    background: rgba(0, 0, 0, 0.70); 
     padding: 40px;
     border-radius: 10px;
     animation: fadeIn 0.5s ease-in-out;
