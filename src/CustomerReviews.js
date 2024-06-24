@@ -26,6 +26,13 @@ const reviews = [
     content: "They showed up on time, did a very deep clean and worked with me to move a bunch of bulky items out of the way. Everything looks bright and new again. I would hire them again next year.",
     rating: 5
   },
+  {
+    id: 4,
+    name: "Jessica Satin Zurita",
+    date: "June 19, 2024",
+    content: "We had an excellent experience with A&A - highly recommend! 10/10",
+    rating: 5
+  }
 ];
 
 function CustomerReviews() {
