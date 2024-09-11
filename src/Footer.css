@@ -48,8 +48,7 @@
 
 @media (max-width: 576px) {
     .footer {
-        flex-direction: column;
-        padding: 10px;
+        display: none; /* Hide footer on small devices */
     }
 
     .footer p,
