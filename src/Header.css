@@ -2,13 +2,15 @@
   position: sticky;
   top: 0;
   width: auto;
-  background-color: #6699ff;
-  color: white;
+  /* background-color: #6699ff; */
+  background-color: #F2F0EF;
+  /* color: white; */
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 1000;
+  height: 10vh;
 }
 
 .header .logo-link {
@@ -17,13 +19,13 @@
 }
 
 .header .brand-logo {
-  max-height: 50px;
+  max-height: 10vh;
   width: auto;
 }
 
 .header .hamburger {
   display: none;
-  font-size: 30px;
+  font-size: 40px;
   background: none;
   border: none;
   color: white;
@@ -33,10 +35,12 @@
 .header nav {
   display: flex;
   align-items: center;
+  padding-right: 5vh;
 }
 
 .header nav a {
-  color: white;
+  /* color: white; */
+  color: maroon;
   text-decoration: none;
   margin-left: 20px;
   font-size: 18px;
@@ -62,7 +66,7 @@
     width: 100%;
     background-color: #6699ff;
     position: absolute;
-    top: 60px;
+    top: 13vh;
     left: 0;
     padding: 10px 20px;
   }
@@ -73,6 +77,6 @@
 
   .header nav a {
     margin: 10px 0;
-    font-size: 18px;
+    font-size: 28px;
   }
 }

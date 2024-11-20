@@ -1,5 +1,5 @@
+import React, { useState, useEffect, useRef } from 'react';
 import './Home.css';
-import React from 'react';
 import { Link } from 'react-router-dom';
 import ImageComparison from './ImageComparison';
 import CustomerReviews from './CustomerReviews';
@@ -14,9 +14,21 @@ import before4 from './images/before4.jpeg';
 import after4 from './images/after4.jpeg';
 import before5 from './images/before5.jpeg';
 import after5 from './images/after5.jpeg';
+import image1 from './images/home1.jpeg';
+import image2 from './images/home2.jpeg';
+import image3 from './images/home3.jpeg';
+import image4 from './images/home4.jpeg';
+import image5 from './images/home5.jpeg';
+import image6 from './images/home6.jpeg';
+import image7 from './images/home7.jpeg';
+import image8 from './images/home8.jpeg';
+import image9 from './images/home9.jpeg';
+import image10 from './images/home10.jpeg';
 import { Helmet } from 'react-helmet';
 
 function Home() {
+
+    
 
     function scrollToSection() {
         const targetElement = document.getElementById('explainer');
@@ -40,63 +52,167 @@ function Home() {
         }
     }
 
+    const [currentImage, setCurrentImage] = useState(image1);
+    const images = [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10];
+
+    const currentIndex = useRef(0); // Persist current index between renders
+
+    useEffect(() => {
+        const imageCycle = setInterval(() => {
+        currentIndex.current = (currentIndex.current + 1) % images.length; // Cycle through the images
+        setCurrentImage(images[currentIndex.current]);
+        }, 10000); // Change image every second
+
+        return () => clearInterval(imageCycle); // Cleanup on component unmount
+    }, [images]);
+
     return (
         <div>
 
             <Helmet>
                 <title>A&A Powerwashing | Home</title>
-                <meta name="description" content="Professional power washing services at affordable prices. Make your home look new again with A&A Powerwashing." />
-                <meta name="keywords" content="powerwashing, cleaning, home services, A&A Powerwashing" />
+                <meta name="description" content="Best in class pressure washing, tailored to your exact needs. Make your home look new again with A&A Powerwashing." />
+                <meta name="keywords" content="powerwashing, pressure washing, power washing, cleaning, home services, A&A Powerwashing, a and a powerwashing, a and a pressure washing" />
                 <meta property="og:title" content="A&A Powerwashing" />
-                <meta property="og:description" content="Professional power washing services at affordable prices. Make your home look new again with A&A Powerwashing." />
+                <meta property="og:description" content="Best in class pressure washing, tailored to your exact needs. Make your home look new again with A&A Powerwashing." />
                 <meta property="og:image" content="./images/logo.PNG" />
                 <meta property="og:url" content="https://aapowerwashers.com" />
             </Helmet>
 
-            <section className="hero">
-                <div className="hero-overlay">
-                    <h1 className="interactive-text">Make Your Home Look New Again!</h1>
-                    <p>Professional power washing services at affordable prices.</p>
-                    <Link to="/contact" className="btn btn-primary">Get a Free Quote</Link>
+
+           
+
+            <section className="hero" style={{ backgroundImage: `url(${currentImage})` }}>
+
+                <div className="landing-contact">
+                    <h1>It's the outside that matters.</h1>
+                    <Link to="/contact" className="contact-button">Get a free quote</Link>
                 </div>
-                <div className="down-arrow" onClick={scrollToSection}>
-                    ↓
-                </div>
+                
             </section>
+
+            <div class="spacer"></div>
 
             <section id="explainer" className="explainer">
-                <h2>Why Powerwash with A&A?</h2>
-                <div>
-                    <p>
-                        At A&A Powerwashing, we pride ourselves on delivering exceptional results that transform the appearance of your property. Our professional powerwashing services are designed to remove dirt, grime, mold, and mildew, leaving your home or business looking pristine and well-maintained. We understand that a clean exterior not only enhances curb appeal but also extends the life of your surfaces by preventing damage caused by buildup and contaminants. With our state-of-the-art equipment and eco-friendly cleaning solutions, we ensure a thorough and safe cleaning process that protects your investment.
-                    </p>
-                    <p>
-                        As dedicated college students, we bring energy, enthusiasm, and a strong work ethic to every job. We are committed to providing high-quality services at affordable prices, making it easier for you to keep your property in top condition without breaking the bank. Our attention to detail and customer-centric approach means we go above and beyond to meet your specific needs and exceed your expectations. Choose A&A Powerwashing for reliable, professional, and eco-friendly powerwashing services that deliver outstanding results every time.
-                    </p>
+                <div class='choose-the-best'>
+
+                    <h1>SOUTH JERSEY'S PREMIER PRESSURE WASHING SERVICE</h1>
+                   
                 </div>
+
+                <div class='small-business-blurb'>
+
+                    <p>We are dedicated to meeting the exact needs of our clients.  With A&A, you will be communicating directly with a business representative throughout the entire process.  Take the first step in getting squeaky clean and experience top of line customer service by filling out our <Link to="/contact">contact form</Link>
+                    .</p>
+
+                </div>
+            
             </section>
+
+            
+
 
             <section className="featured-work">
-                <h2>Featured Work</h2>
-                <div>
+                <div className="featured-work-header">
+                    <h2>Certified Soft Washing and Powerwashing</h2>
+                    <h3>Take a look, our work speaks for itself</h3>
+                </div>
 
-                    <ImageComparison beforeImage={before2} afterImage={after2} />
-                    <ImageComparison beforeImage={before3} afterImage={after3} />
-                    <ImageComparison beforeImage={before4} afterImage={after4} />
+                <div className="compare-image-container">
+                    <div className="image-and-review">
+                        <div className="image-container">
+                            <ImageComparison beforeImage={before2} afterImage={after2} />
+                        </div>
+                    <div className="review-text">
+                        <h3>Paver Cleaning</h3>
+                        <p>
+                        See how our power washing services removed years of dirt and grime,
+                        making these pavers look brand new.
+                        </p>
+                        <Link to="/contact" className="contact-button">Get cleaned</Link>
 
-                    <ImageComparison beforeImage={before1} afterImage={after1} />
-                    <ImageComparison beforeImage={before5} afterImage={after5} />
-                    {/* <ImageComparison />
-                    <ImageComparison />
-                    <ImageComparison /> */}
+                    </div>
+                </div>
+                <div className="image-and-review">
+                    <div className="image-container">
+                        <ImageComparison beforeImage={before4} afterImage={after4} />
+                    </div>
+                    <div className="review-text">
+                        <h3>Concrete Restoration</h3>
+                        <p>
+                        Our pressure washing restored the beauty of this pool deck, removing
+                        stains and buildup with ease.
+                        </p>
+                        <Link to="/contact" className="contact-button">Rapid quote</Link>
+
+                    </div>
+                </div>
+                <div className="image-and-review">
+                    <div className="image-container">
+                        <ImageComparison beforeImage={before5} afterImage={after5} />
+                    </div>
+                    <div className="review-text">
+                        <h3>Wall Cleaning</h3>
+                        <p>
+                        Check out how we transformed this wall, giving it a fresh, clean
+                        appearance after years of neglect.
+                        </p>
+                        <Link to="/contact" className="contact-button">House Restoration</Link>
+
+                    </div>
+                </div>
+            </div>
+            </section>
+
+            <section className="customer-reviews">
+                <h2>What Our Customers Say</h2>
+                <div className="reviews-container">
+                <div className="review">
+                    <p>"The fine gentleman from A&A power washing just finished up at my property earlier today. They did an excellent job, the concrete looks new, and they even took care of dusting off the spring pollen from my solar panels. They responded quickly when I put in a quote request last week, and got me taken care of first thing today being Monday."</p>
+                    <span>- Mike Mitten</span>
+                    <a href="https://g.co/kgs/YFESBHM" target="_blank" rel="noopener noreferrer">Read Full Review</a>
+                </div>
+                <div className="review">
+                    <p>"A&A did a great job. Thorough and efficient. Strongly recommend them if you need power washing"</p>
+                    <span>- Stephen Orlofsky</span>
+                    <a href="https://g.co/kgs/YFESBHM" target="_blank" rel="noopener noreferrer">Read Full Review</a>
+                </div>
+                <div className="review">
+                    <p>"They showed up on time, did a very deep clean and worked with me to move a bunch of bulky items out of the way. Everything looks bright and new again. I would hire them again next year."</p>
+                    <span>- Dan Reiss</span>
+                    <a href="https://www.facebook.com/profile.php?id=61559772597900&sk=reviews" target="_blank" rel="noopener noreferrer">Read Full Review</a>
+                </div>
                 </div>
             </section>
+
+            {/* <section className="featured-work">
+                <h2>Click and drag to see the difference we make</h2>
+
+                <div className='compare-image-container'>
+                    <div className='image-and-review'>
+                        <ImageComparison beforeImage={before2} afterImage={after2} />
+                    </div>
+                    <div className='image-and-review'>
+                        <ImageComparison beforeImage={before4} afterImage={after4} />
+                    </div>
+                    <div className='image-and-review'>
+                        <ImageComparison beforeImage={before5} afterImage={after5} />
+                    </div>
+                </div>
+
+
+            </section> */}
+
+
+
+
             <section className="testimonials">
                 <div>
-                    <CustomerReviews />
+                    {/* <CustomerReviews /> */}
                 </div>
             </section>
-            <section className="faq">
+
+            {/* <section className="faq">
                 <h2>Frequently Asked Questions</h2>
                 <AccordionItem title="How much do your powerwashing services cost?">
                     Our pricing is competitive and based on the specific needs of each job. We offer free estimates, so please contact us to get a customized quote for your project.
@@ -110,12 +226,39 @@ function Home() {
                 <AccordionItem title='Why should I choose A&A Powerwashing?'>
                     As hardworking college students, we bring dedication, enthusiasm, and a strong work ethic to every job. We offer high-quality, affordable powerwashing services with a focus on customer satisfaction and environmental responsibility.
                 </AccordionItem>
-            </section>
-            <div className='home-page-padding'>
-            </div>
+            </section> */}
+
+            
+
+
+            <footer className="business-footer">
+                <div className="footer-section contact-info">
+                    <h4>Contact Us</h4>
+                    <p>Text or Call Us: (856) 281-2658</p>
+                    <p>Email: aapowerwashers@gmail.com</p>
+                    <p>Address: 41 Cooper Run Drive, Cherry Hill, USA</p>
+                </div>
+                <div className="footer-section social-links">
+                    <h4>Follow Us</h4>
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
+                    <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+                </div>
+                <div className="footer-section business-hours">
+                    <h4>Business Hours</h4>
+                    <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+                    <p>Saturday: 10:00 AM - 2:00 PM</p>
+                    <p>Sunday: Closed</p>
+                </div>
+            </footer>
+
+
+            {/* <div className='home-page-padding'>
+            </div> */}
         </div>
         
     );
+
 }
 
 export default Home;

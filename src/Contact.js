@@ -61,7 +61,7 @@ function Contact() {
 
   return (
     <div className="contact">
-      <h2>Contact Us</h2>
+      <h2>We'll get back to you within 24 hours</h2>
       <form onSubmit={handleSubmit}>
         <input 
           type="text" 
@@ -71,22 +71,24 @@ function Contact() {
           onChange={handleChange} 
           required 
         />
-        <input 
-          type="email" 
-          name="email" 
-          placeholder="Your Email" 
-          value={formData.email} 
-          onChange={handleChange} 
-          required 
-        />
-        <input 
-          type="text" 
-          name="phone" 
-          placeholder="Your Phone Number" 
-          value={formData.phone} 
-          onChange={handleChange} 
-          required 
-        />
+        <div class='grouping'>
+          <input 
+            type="email" 
+            name="email" 
+            placeholder="Your Email" 
+            value={formData.email} 
+            onChange={handleChange} 
+            required 
+          />
+          <input 
+            type="text" 
+            name="phone" 
+            placeholder="Your Phone Number" 
+            value={formData.phone} 
+            onChange={handleChange} 
+            required 
+          />
+        </div>
         <input 
           type="text" 
           name="address" 
@@ -97,54 +99,71 @@ function Contact() {
         />
         <textarea 
           name="message" 
-          placeholder="Anything you want us to know? (optional)" 
+          placeholder="Want something else?  Let us know! (optional)" 
           value={formData.message} 
           onChange={handleChange} 
            
         ></textarea>
 
-        <div>
+        <div class='select-service'> 
           <h3>Select Desired Services</h3>
-          <label>
-            <input 
-              type="checkbox" 
-              name="services" 
-              value="Power Washing" 
-              onChange={handleChange} 
-            /> Power Washing
-          </label>
-          <label>
-            <input 
-              type="checkbox" 
-              name="services" 
-              value="Roof Cleaning" 
-              onChange={handleChange} 
-            /> Roof Cleaning
-          </label>
-          <label>
-            <input 
-              type="checkbox" 
-              name="services" 
-              value="Window Cleaning" 
-              onChange={handleChange} 
-            /> Window Cleaning
-          </label>
-          <label>
-            <input 
-              type="checkbox" 
-              name="services" 
-              value="House Wash" 
-              onChange={handleChange} 
-            /> House Wash
-          </label>
-          <label>
-            <input 
-              type="checkbox" 
-              name="services" 
-              value="Gutter Cleaning" 
-              onChange={handleChange} 
-            /> Gutter Cleaning
-          </label>
+
+            <div class='box-group'>
+              <label>
+                <input 
+                  type="checkbox" 
+                  name="services" 
+                  value="Power Washing" 
+                  onChange={handleChange} 
+                /> Power Washing
+              </label>
+              <label>
+                <input 
+                  type="checkbox" 
+                  name="services" 
+                  value="Roof Cleaning" 
+                  onChange={handleChange} 
+                /> Roof Cleaning
+              </label>
+            </div>
+
+            <div class='box-group'>
+              <label>
+                <input 
+                  type="checkbox" 
+                  name="services" 
+                  value="Window Cleaning" 
+                  onChange={handleChange} 
+                /> Window Cleaning
+              </label>
+              <label>
+                <input 
+                  type="checkbox" 
+                  name="services" 
+                  value="House Wash" 
+                  onChange={handleChange} 
+                /> House Wash
+              </label>
+            </div>
+
+            <div class='box-group'>
+              <label>
+                <input 
+                  type="checkbox" 
+                  name="services" 
+                  value="Gutter Cleaning" 
+                  onChange={handleChange} 
+                /> Gutter Cleaning
+              </label>
+              <label>
+                <input 
+                  type="checkbox" 
+                  name="services" 
+                  value="Trash Can Cleaning" 
+                  onChange={handleChange} 
+                /> Trash Can Cleaning
+              </label>
+            </div>
         </div>
 
         <button type="submit" disabled={loading}>
