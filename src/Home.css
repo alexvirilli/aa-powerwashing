@@ -262,7 +262,7 @@ body, html {
 .image-container {
     flex: 1; /* Ensure images take equal width */
     max-width: 100%; /* Allow full width */
-    min-width: 65vh; /* Limit the width of the image */
+    min-width: 50vh; /* Limit the width of the image */
     flex-shrink: 0;
 }
 

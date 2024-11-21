@@ -240,9 +240,8 @@ function Home() {
                 </div>
                 <div className="footer-section social-links">
                     <h4>Follow Us</h4>
-                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
-                    <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
-                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a href="https://www.facebook.com/profile.php?id=61559772597900" target="_blank" rel="noopener noreferrer">Facebook</a>
+                    <a href="https://www.instagram.com/aapowerwashers/" target="_blank" rel="noopener noreferrer">Instagram</a>
                 </div>
                 <div className="footer-section business-hours">
                     <h4>Business Hours</h4>
