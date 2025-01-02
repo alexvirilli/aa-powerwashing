@@ -165,7 +165,7 @@ function Home() {
             </section>
 
             <section className="customer-reviews">
-                <h2>What Our Customers Say</h2>
+                <h2>Real People, Real Reviews</h2>
                 <div className="reviews-container">
                 <div className="review">
                     <p>"The fine gentleman from A&A power washing just finished up at my property earlier today. They did an excellent job, the concrete looks new, and they even took care of dusting off the spring pollen from my solar panels. They responded quickly when I put in a quote request last week, and got me taken care of first thing today being Monday."</p>
