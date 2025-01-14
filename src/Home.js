@@ -185,27 +185,6 @@ function Home() {
                 </div>
             </section>
 
-            {/* <section className="featured-work">
-                <h2>Click and drag to see the difference we make</h2>
-
-                <div className='compare-image-container'>
-                    <div className='image-and-review'>
-                        <ImageComparison beforeImage={before2} afterImage={after2} />
-                    </div>
-                    <div className='image-and-review'>
-                        <ImageComparison beforeImage={before4} afterImage={after4} />
-                    </div>
-                    <div className='image-and-review'>
-                        <ImageComparison beforeImage={before5} afterImage={after5} />
-                    </div>
-                </div>
-
-
-            </section> */}
-
-
-
-
             <section className="testimonials">
                 <div>
                     {/* <CustomerReviews /> */}
@@ -245,9 +224,9 @@ function Home() {
                 </div>
                 <div className="footer-section business-hours">
                     <h4>Business Hours</h4>
-                    <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
-                    <p>Saturday: 10:00 AM - 2:00 PM</p>
-                    <p>Sunday: Closed</p>
+                    <p>24 Hours</p>
+                    <p>7 Days Per Week</p>
+
                 </div>
             </footer>
 
