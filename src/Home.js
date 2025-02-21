@@ -24,6 +24,13 @@ import image7 from './images/home7.jpeg';
 import image8 from './images/home8.jpeg';
 import image9 from './images/home9.jpeg';
 import image10 from './images/home10.jpeg';
+import paver1 from './images/paver1.jpeg';
+import paver2 from './images/paver2.jpeg';
+import wall1 from './images/wall1.jpeg';
+import wall2 from './images/wall2.jpeg';
+import roof1 from './images/roof1.jpeg';
+import roof2 from './images/roof2.jpeg';
+
 import { Helmet } from 'react-helmet';
 
 function Home() {
@@ -115,16 +122,16 @@ function Home() {
             <section className="featured-work">
                 <div className="featured-work-header">
                     <h2>Certified Soft Washing and Powerwashing</h2>
-                    <h3>Take a look, our work speaks for itself</h3>
+                    <h3>Take a look at some of the superior services we offer</h3>
                 </div>
 
                 <div className="compare-image-container">
                     <div className="image-and-review">
                         <div className="image-container">
-                            <ImageComparison beforeImage={before2} afterImage={after2} />
+                            <ImageComparison beforeImage={paver1} afterImage={paver2} />
                         </div>
                     <div className="review-text">
-                        <h3>Paver Cleaning</h3>
+                        <h3>Paver Restoration</h3>
                         <p>
                         See how our power washing services removed years of dirt and grime,
                         making these pavers look brand new.
@@ -138,7 +145,7 @@ function Home() {
                         <ImageComparison beforeImage={before4} afterImage={after4} />
                     </div>
                     <div className="review-text">
-                        <h3>Concrete Restoration</h3>
+                        <h3>Surface Cleaning</h3>
                         <p>
                         Our pressure washing restored the beauty of this pool deck, removing
                         stains and buildup with ease.
@@ -149,10 +156,10 @@ function Home() {
                 </div>
                 <div className="image-and-review">
                     <div className="image-container">
-                        <ImageComparison beforeImage={before5} afterImage={after5} />
+                        <ImageComparison beforeImage={wall1} afterImage={wall2} />
                     </div>
                     <div className="review-text">
-                        <h3>Wall Cleaning</h3>
+                        <h3>House Washing & Window Cleaning</h3>
                         <p>
                         Check out how we transformed this wall, giving it a fresh, clean
                         appearance after years of neglect.
@@ -161,6 +168,20 @@ function Home() {
 
                     </div>
                 </div>
+                <div className="image-and-review">
+                    <div className="image-container">
+                        <ImageComparison beforeImage={roof1} afterImage={roof2} />
+                    </div>
+                    <div className="review-text">
+                        <h3>Roof Washing</h3>
+                        <p>
+                        Our team erased the black streaks on this roof, returning it to its former glory.
+                        </p>
+                        <Link to="/contact" className="contact-button">Roof Cleaning</Link>
+
+                    </div>
+                </div>
+
             </div>
             </section>
 
