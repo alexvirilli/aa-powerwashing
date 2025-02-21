@@ -61,12 +61,12 @@ function Contact() {
 
   return (
     <div className="contact">
-      <h2>We'll get back to you within 24 hours</h2>
+      <h2>Complete this form for a personalized quote</h2>
       <form onSubmit={handleSubmit}>
         <input 
           type="text" 
           name="name" 
-          placeholder="Your Name" 
+          placeholder="Name" 
           value={formData.name} 
           onChange={handleChange} 
           required 
@@ -75,7 +75,7 @@ function Contact() {
           <input 
             type="email" 
             name="email" 
-            placeholder="Your Email" 
+            placeholder="Email" 
             value={formData.email} 
             onChange={handleChange} 
             required 
@@ -83,7 +83,7 @@ function Contact() {
           <input 
             type="text" 
             name="phone" 
-            placeholder="Your Phone Number" 
+            placeholder="Phone Number" 
             value={formData.phone} 
             onChange={handleChange} 
             required 
@@ -92,7 +92,7 @@ function Contact() {
         <input 
           type="text" 
           name="address" 
-          placeholder="Your Address" 
+          placeholder="Address" 
           value={formData.address} 
           onChange={handleChange} 
           required 
