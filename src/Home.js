@@ -123,6 +123,7 @@ function Home() {
                 <div className="featured-work-header">
                     <h2>Certified Soft Washing and Powerwashing</h2>
                     <h3>Take a look at some of the superior services we offer</h3>
+                    <p>Click and drag on the slider to see the difference</p>
                 </div>
 
                 <div className="compare-image-container">

@@ -6,7 +6,8 @@ function ImageComparison({ beforeImage, afterImage }) {
     return (
         <div className="image-comparison-slider-container">
             <ReactCompareImage
-                sliderLineColor="#F9F9F9"
+                sliderLineColor="black"
+                sliderLineWidth={5}
                 leftImage={beforeImage}
                 rightImage={afterImage}
                 sliderPositionPercentage={0.5}
