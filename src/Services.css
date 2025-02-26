@@ -1,191 +1,223 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
-
-body {
-  font-family: 'Source Sans 3', sans-serif;
-  background-color: #f9f9f9;
-  margin: 0;
-  padding: 0;
-}
-
-.services {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #f9f9f9; 
-}
-
-.services h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 28px;
-  color: #333;
-}
-
-.accordion-item {
-  border-bottom: 1px solid #ccc;
-  padding: 10px;
-  background-color: #f9f9f9;
-  text-align: left;
-}
-
-.accordion-title {
-  background: none;
-  border: none;
+/* Hero Section Styles */
+.hero-section {
+  position: relative;
   width: 100%;
-  text-align: left;
-  font-size: 18px;
-  font-weight: bold;
-  cursor: pointer;
-  padding: 15px;
-  color: #3c75b4;
+  height: 70vh;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.hero-video-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.video-overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.video-overlay p {
+  font-size: 1.5rem;
+  max-width: 800px;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+#play-pause-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-.accordion-title:hover {
-  background-color: #f0f0f0;
+#play-pause-btn:hover {
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
-.accordion-icon {
-  margin-left: 10px;
+/* Services Section Styles */
+
+.services-page {
+  background-color: #0b4d8c;
+  height: 350vh;
 }
 
-.accordion-content {
+.services-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.services-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+.service-buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+}
+
+.service-button {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 200px;
+  width: 100%;
+}
+
+.service-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-color: #0078d4;
+}
+
+.service-button.image-left {
+  flex-direction: row;
+}
+
+.service-button.image-right {
+  flex-direction: row-reverse;
+}
+
+.service-image {
+  width: 40%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.service-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.service-button:hover .service-image img {
+  transform: scale(1.05);
+}
+
+.service-content {
+  width: 60%;
+  padding: 20px;
   text-align: left;
-  padding: 15px;
-  background-color: #fff;
-  border-top: 1px solid #eee;
-  transition: max-height 0.3s ease;
 }
 
-ul {
-  list-style-type: disc;
-  padding-left: 20px;
-  margin-bottom: 15px;
+.service-button.image-right .service-content {
+  text-align: right;
 }
 
-ul li {
+.service-content h3 {
+  font-size: 1.5rem;
   margin-bottom: 10px;
-}
-
-p {
-  margin-bottom: 15px;
-  line-height: 1.6;
-}
-
-strong {
   color: #333;
+  transition: color 0.3s ease;
 }
 
-.accordion-content strong {
-  display: block;
-  margin-bottom: 10px;
-  font-size: 16px;
+.service-button:hover .service-content h3 {
+  color: #0078d4;
 }
 
-.accordion-content p {
+.service-content p {
+  font-size: 1rem;
   color: #666;
-}
-
-.accordion-content ul li {
-  color: #333;
-}
-
-.highlight {
-  background-color: #e7f3ff;
-  padding: 5px;
-  border-radius: 5px;
   margin-bottom: 15px;
+}
+
+.learn-more {
   display: inline-block;
+  color: #0078d4;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
 }
 
-.spacediv {
-  height: 20vh;
-  color: #f9f9f9;
-  background-color: #f9f9f9;
+.learn-more::after {
+  content: '→';
+  margin-left: 5px;
+  transition: transform 0.3s ease;
 }
 
-/* Responsive Design */
-@media (max-width: 1200px) {
-  .services h2 {
-    font-size: 26px;
-  }
-
-  .accordion-title {
-    font-size: 16px;
-  }
-
-  .accordion-content strong {
-    font-size: 14px;
-  }
+.service-button:hover .learn-more::after {
+  transform: translateX(5px);
 }
 
-@media (max-width: 992px) {
-  .services h2 {
-    font-size: 24px;
-  }
-
-  .accordion-title {
-    font-size: 16px;
-    padding: 10px;
-  }
-
-  .accordion-content {
-    padding: 10px;
-  }
-
-  ul {
-    padding-left: 15px;
-  }
+/* Add a class for the button press animation */
+.service-button:active {
+  transform: scale(0.98);
 }
 
+/* Responsive adjustments */
 @media (max-width: 768px) {
-  .services h2 {
-    font-size: 22px;
+  .hero-section {
+    height: 50vh;
   }
-
-  .accordion-title {
-    font-size: 14px;
+  
+  .video-overlay h1 {
+    font-size: 2rem;
   }
-
-  .accordion-content {
-    padding: 8px;
+  
+  .video-overlay p {
+    font-size: 1.2rem;
   }
-
-  ul {
-    padding-left: 10px;
+  
+  .service-button {
+    flex-direction: column !important;
+    height: auto;
   }
-}
-
-@media (max-width: 576px) {
-  .services {
-    padding: 10px;
+  
+  .service-image, 
+  .service-content {
+    width: 100%;
   }
-
-  .services h2 {
-    font-size: 20px;
+  
+  .service-image {
+    height: 200px;
   }
-
-  .accordion-title {
-    font-size: 14px;
-    padding: 8px;
-  }
-
-  .accordion-content {
-    padding: 8px;
-  }
-
-  ul {
-    padding-left: 10px;
-  }
-
-  .accordion-content strong {
-    font-size: 12px;
-  }
-
-  p {
-    font-size: 14px;
+  
+  .service-button.image-right .service-content {
+    text-align: left;
+    left: 2rem;
   }
 }
