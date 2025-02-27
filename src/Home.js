@@ -89,10 +89,10 @@ function Home() {
 
            
 
-            <section className="hero" style={{ backgroundImage: `url(${currentImage})` }}>
+            <section className="hero" style={{ backgroundImage: `url(${image9})` }}>
 
                 <div className="landing-contact">
-                    <h1>It's the outside that matters.</h1>
+                    <h1>South Jersey's Premier Pressure Washing Service</h1>
                     <Link to="/contact" className="contact-button1">Get a free quote</Link>
                 </div>
                 
@@ -103,7 +103,7 @@ function Home() {
             <section id="explainer" className="explainer">
                 <div class='choose-the-best'>
 
-                    <h1>SOUTH JERSEY'S PREMIER PRESSURE WASHING SERVICE</h1>
+                    <h1>Providing Eco-Friendly Solutions to SJ Homes</h1>
                    
                 </div>
 
@@ -246,8 +246,8 @@ function Home() {
                 </div>
                 <div className="footer-section business-hours">
                     <h4>Business Hours</h4>
-                    <p>24 Hours</p>
-                    <p>7 Days Per Week</p>
+                    <p>8:00 AM - 6:00 PM</p>
+                    <p>Monday thru Friday</p>
 
                 </div>
             </footer>
