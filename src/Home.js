@@ -82,7 +82,7 @@ function Home() {
                 <meta name="keywords" content="powerwashing, pressure washing, power washing, cleaning, home services, A&A Powerwashing, a and a powerwashing, a and a pressure washing" />
                 <meta property="og:title" content="A&A Powerwashing" />
                 <meta property="og:description" content="Best in class pressure washing, tailored to your exact needs. Make your home look new again with A&A Powerwashing." />
-                <meta property="og:image" content="./images/logo.PNG" />
+                <meta property="og:image" content="./images/new_logo.PNG" />
                 <meta property="og:url" content="https://aapowerwashers.com" />
             </Helmet>
 
