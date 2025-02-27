@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './WindowCleaning.css';
 
 const WindowCleaning = () => {
@@ -85,6 +85,7 @@ const WindowCleaning = () => {
           <div className="detail-video-overlay">
             <h1>Professional Window Cleaning</h1>
             <p>Crystal clear views and enhanced curb appeal for your home or business</p>
+                <Link to="/contact" className="contact-button">Get a free quote</Link>
           </div>
           <button className="detail-play-pause-btn" onClick={togglePlayPause}>
             <i className={`fas ${isPlaying ? 'fa-pause' : 'fa-play'}`}></i>
@@ -156,6 +157,10 @@ const WindowCleaning = () => {
                   <p>We use environmentally responsible, biodegradable cleaning solutions that deliver exceptional results without harming plants or pets.</p>
                 </div>
               </div>
+
+                <div className='quick-quote'> 
+                <Link to="/contact" className="contact-button">Get a free quote</Link>
+                </div>
 
               <div className="service-process">
                 <h2>Our Process</h2>
@@ -285,6 +290,11 @@ const WindowCleaning = () => {
           )}
         </div>
       </section>
+      <div className="back-navigation">
+        <Link to="/services" className="back-link">
+          <i className="fas fa-arrow-left"></i> Back to Services
+        </Link>
+      </div>
     </div>
   );
 };

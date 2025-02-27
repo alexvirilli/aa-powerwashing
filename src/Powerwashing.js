@@ -85,6 +85,8 @@ const Powerwashing = () => {
           <div className="detail-video-overlay">
             <h1>Residential Powerwashing</h1>
             <p>Restore your home's beauty and protect your investment</p>
+            <Link to="/contact" className="contact-button">Get a free quote</Link>
+
           </div>
           <button className="detail-play-pause-btn" onClick={togglePlayPause}>
             <i className={`fas ${isPlaying ? 'fa-pause' : 'fa-play'}`}></i>
@@ -155,7 +157,12 @@ const Powerwashing = () => {
                   <h3>Eco-Friendly Approach</h3>
                   <p>We use environmentally responsible cleaning solutions that are tough on grime but gentle on your landscaping and the environment.</p>
                 </div>
+
               </div>
+
+              <div className='quick-quote'>
+                  <Link to="/contact" className="contact-button">Get a free quote</Link>
+                </div>
 
               <div className="service-process">
                 <h2>Our Process</h2>
@@ -263,6 +270,13 @@ const Powerwashing = () => {
           )}
         </div>
       </section>
+
+      <div className="back-navigation">
+        <Link to="/services" className="back-link">
+          <i className="fas fa-arrow-left"></i> Back to Services
+        </Link>
+      </div>
+      
     </div>
   );
 };

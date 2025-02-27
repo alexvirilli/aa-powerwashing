@@ -85,6 +85,8 @@ const GutterCleaning = () => {
           <div className="detail-video-overlay">
             <h1>Gutter Cleaning Services</h1>
             <p>Protect your roof by stopping gutter blockages</p>
+            <Link to="/contact" className="contact-button">Get a free quote</Link>
+
           </div>
           <button className="detail-play-pause-btn" onClick={togglePlayPause}>
             <i className={`fas ${isPlaying ? 'fa-pause' : 'fa-play'}`}></i>
@@ -157,6 +159,11 @@ const GutterCleaning = () => {
                 </div>
               </div>
 
+              <div className='quick-quote'> 
+              <Link to="/contact" className="contact-button">Get a free quote</Link>
+
+                </div>
+
               
             </div>
           )}
@@ -223,6 +230,11 @@ const GutterCleaning = () => {
           )}
         </div>
       </section>
+      <div className="back-navigation">
+        <Link to="/services" className="back-link">
+          <i className="fas fa-arrow-left"></i> Back to Services
+        </Link>
+      </div>
     </div>
   );
 };

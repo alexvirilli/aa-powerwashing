@@ -85,6 +85,8 @@ const RoofCleaning = () => {
           <div className="detail-video-overlay">
             <h1>Professional Roof Cleaning</h1>
             <p>Extend the life of your roof and enhance your home's curb appeal</p>
+            <Link to="/contact" className="contact-button">Get a free quote</Link>
+
           </div>
           <button className="detail-play-pause-btn" onClick={togglePlayPause}>
             <i className={`fas ${isPlaying ? 'fa-pause' : 'fa-play'}`}></i>
@@ -157,6 +159,8 @@ const RoofCleaning = () => {
                 </div>
               </div>
 
+
+
               <div className="service-process">
                 <h2>Our Process</h2>
                 <div className="process-steps">
@@ -191,6 +195,11 @@ const RoofCleaning = () => {
                   </div>
                 </div>
               </div>
+
+              <div className='quick-quote'>
+              <Link to="/contact" className="contact-button">Get a free quote</Link>
+
+                </div>
             </div>
           )}
 
@@ -282,6 +291,11 @@ const RoofCleaning = () => {
           )}
         </div>
       </section>
+      <div className="back-navigation">
+        <Link to="/services" className="back-link">
+          <i className="fas fa-arrow-left"></i> Back to Services
+        </Link>
+      </div>
     </div>
   );
 };

@@ -87,6 +87,7 @@ const HouseWashing = () => {
           <div className="detail-video-overlay">
             <h1>House Washing</h1>
             <p>Restore your home's exterior beauty with our professional cleaning services</p>
+            <Link to="/contact" className="contact-button">Get a free quote</Link>
           </div>
           <button className="detail-play-pause-btn" onClick={togglePlayPause}>
             <i className={`fas ${isPlaying ? 'fa-pause' : 'fa-play'}`}></i>
@@ -208,6 +209,11 @@ const HouseWashing = () => {
                     <p>We perform a detailed rinse to remove all cleaning solutions and loosened contaminants, followed by a final inspection to ensure every area meets our high-quality standards and your complete satisfaction.</p>
                   </div>
                 </div>
+                <div className='quick-quote'>
+                    <Link to="/contact" className="contact-button">Get a free quote</Link>
+
+                </div>
+
               </div>
 
               <div className="commercial-clients">
@@ -318,6 +324,11 @@ const HouseWashing = () => {
           )}
         </div>
       </section>
+      <div className="back-navigation">
+        <Link to="/services" className="back-link">
+          <i className="fas fa-arrow-left"></i> Back to Services
+        </Link>
+      </div>
     </div>
   );
 };

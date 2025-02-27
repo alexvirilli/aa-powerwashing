@@ -87,6 +87,8 @@ const CommercialPowerwashing = () => {
           <div className="detail-video-overlay">
             <h1>Commercial Powerwashing</h1>
             <p>Professional exterior cleaning solutions for businesses of all sizes</p>
+            <Link to="/contact" className="contact-button">Get a free quote</Link>
+
           </div>
           <button className="detail-play-pause-btn" onClick={togglePlayPause}>
             <i className={`fas ${isPlaying ? 'fa-pause' : 'fa-play'}`}></i>
@@ -209,6 +211,11 @@ const CommercialPowerwashing = () => {
                   </div>
                 </div>
               </div>
+
+              <div className='quick-quote'>
+              <Link to="/contact" className="contact-button">Get a free quote</Link>
+
+                 </div>
 
               <div className="commercial-clients">
                 <h2>Industries We Serve</h2>
@@ -363,6 +370,11 @@ const CommercialPowerwashing = () => {
           )}
         </div>
       </section>
+      <div className="back-navigation">
+        <Link to="/services" className="back-link">
+          <i className="fas fa-arrow-left"></i> Back to Services
+        </Link>
+      </div>
     </div>
   );
 };

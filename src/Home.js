@@ -93,7 +93,7 @@ function Home() {
 
                 <div className="landing-contact">
                     <h1>It's the outside that matters.</h1>
-                    <Link to="/contact" className="contact-button">Get a free quote</Link>
+                    <Link to="/contact" className="contact-button1">Get a free quote</Link>
                 </div>
                 
             </section>
@@ -137,7 +137,7 @@ function Home() {
                         See how our power washing services removed years of dirt and grime,
                         making these pavers look brand new.
                         </p>
-                        <Link to="/contact" className="contact-button">Get cleaned</Link>
+                        <Link to="/services/Powerwashing" className="contact-button1">Powerwashing</Link>
 
                     </div>
                 </div>
@@ -151,7 +151,7 @@ function Home() {
                         Our pressure washing restored the beauty of this pool deck, removing
                         stains and buildup with ease.
                         </p>
-                        <Link to="/contact" className="contact-button">Rapid quote</Link>
+                        <Link to="/services/Powerwashing" className="contact-button1">Learn more</Link>
 
                     </div>
                 </div>
@@ -165,7 +165,7 @@ function Home() {
                         Check out how we transformed this wall, giving it a fresh, clean
                         appearance after years of neglect.
                         </p>
-                        <Link to="/contact" className="contact-button">House Restoration</Link>
+                        <Link to="/services/HouseWashing" className="contact-button1">Soft Washing</Link>
 
                     </div>
                 </div>
@@ -178,7 +178,7 @@ function Home() {
                         <p>
                         Our team erased the black streaks on this roof, returning it to its former glory.
                         </p>
-                        <Link to="/contact" className="contact-button">Roof Cleaning</Link>
+                        <Link to="/services/RoofCleaning" className="contact-button1">Roof Cleaning</Link>
 
                     </div>
                 </div>

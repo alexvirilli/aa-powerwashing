@@ -32,7 +32,8 @@
   /* Back Navigation */
   .back-navigation {
     padding: 1.5rem;
-    background-color: var(--gray-light);
+    background-color: #F2F0EF;
+    width: auto;
   }
   
   .back-link {
@@ -210,10 +211,8 @@
   
   /* Service Features */
   .service-features {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-bottom: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
   }
   
   .feature {
@@ -223,6 +222,7 @@
     text-align: center;
     transition: var(--transition-standard);
     box-shadow: var(--shadow-soft);
+    min-height: 250px;
   }
   
   .feature:hover {
@@ -621,8 +621,9 @@
     .feature-icon {
         width: 3rem;
         height: 3rem;
-        font-size: 1.2rem;
         margin-bottom: 1rem;
+        font-size: 1.5rem; /* Keep font size from shrinking */
+        aspect-ratio: 1 / 1; /* Ensures it remains a perfect circle */
     }
     
     .feature h3 {

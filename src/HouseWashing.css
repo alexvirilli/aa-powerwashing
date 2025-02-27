@@ -33,6 +33,33 @@
     padding: 1.5rem;
     background-color: var(--gray-light);
 }
+
+.contact-button {
+    z-index: 99;
+    display: inline-block;
+    margin-top: 20px; 
+    padding: 10px 20px;
+    background-color: #cf4d41; 
+    color: white; 
+    font-size: 22px;
+    text-decoration: none; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 10rem;
+    animation: fadeIn 2s ease-in-out;
+
+}
+.contact-button:hover {
+    background-color: #852017; 
+}
+
+
+.quick-quote {
+    text-align: center;
+    margin: 5vh;
+}
   
 .back-link {
     display: inline-flex;
@@ -222,10 +249,11 @@
     text-align: center;
     transition: var(--transition-standard);
     box-shadow: var(--shadow-soft);
-    height: 80%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 250px;
 }
   
 .feature:hover {
@@ -698,6 +726,7 @@
     .feature-icon {
         width: 3rem;
         height: 3rem;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
+        aspect-ratio: 1 / 1;
     }
 }
