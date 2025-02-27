@@ -67,7 +67,7 @@ const Services = () => {
     {
       id: 4,
       title: "Roof Cleaning",
-      description: "We use a blend of chemicals to carefully soft wash your roof and rid it of dirt and grime that has bilt up over years",
+      description: "We use a blend of chemicals to carefully soft wash your roof and rid it of dirt and grime that has built up over years",
       iconClass: "fas fa-home", // Home/roof icon
       url: "/services/RoofCleaning",
       imagePosition: "left"
