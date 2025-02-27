@@ -14,16 +14,16 @@ import before4 from './images/before4.jpeg';
 import after4 from './images/after4.jpeg';
 import before5 from './images/before5.jpeg';
 import after5 from './images/after5.jpeg';
-import image1 from './images/home1.jpeg';
-import image2 from './images/home2.jpeg';
-import image3 from './images/home3.jpeg';
-import image4 from './images/home4.jpeg';
-import image5 from './images/home5.jpeg';
-import image6 from './images/home6.jpeg';
-import image7 from './images/home7.jpeg';
-import image8 from './images/home8.jpeg';
-import image9 from './images/home9.jpeg';
-import image10 from './images/home10.jpeg';
+// import image1 from './images/home1.jpeg';
+// import image2 from './images/home2.jpeg';
+// import image3 from './images/home3.jpeg';
+// import image4 from './images/home4.jpeg';
+// import image5 from './images/home5.jpeg';
+// import image6 from './images/home6.jpeg';
+// import image7 from './images/home7.jpeg';
+// import image8 from './images/home8.jpeg';
+import image9 from './images/home9.webp';
+// import image10 from './images/home10.jpeg';
 import paver1 from './images/paver1.jpeg';
 import paver2 from './images/paver2.jpeg';
 import wall1 from './images/wall1.jpeg';
@@ -59,19 +59,19 @@ function Home() {
         }
     }
 
-    const [currentImage, setCurrentImage] = useState(image1);
-    const images = [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10];
+    // const [currentImage, setCurrentImage] = useState(image1);
+    // const images = [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10];
 
-    const currentIndex = useRef(0); // Persist current index between renders
+    // const currentIndex = useRef(0); // Persist current index between renders
 
-    useEffect(() => {
-        const imageCycle = setInterval(() => {
-        currentIndex.current = (currentIndex.current + 1) % images.length; // Cycle through the images
-        setCurrentImage(images[currentIndex.current]);
-        }, 10000); // Change image every second
+    // useEffect(() => {
+    //     const imageCycle = setInterval(() => {
+    //     currentIndex.current = (currentIndex.current + 1) % images.length; // Cycle through the images
+    //     setCurrentImage(images[currentIndex.current]);
+    //     }, 10000); // Change image every second
 
-        return () => clearInterval(imageCycle); // Cleanup on component unmount
-    }, [images]);
+    //     return () => clearInterval(imageCycle); // Cleanup on component unmount
+    // }, [images]);
 
     return (
         <div>
@@ -121,7 +121,7 @@ function Home() {
 
             <section className="featured-work">
                 <div className="featured-work-header">
-                    <h2>Certified Soft Washing and Powerwashing</h2>
+                    <h2>Soft Washing and Powerwashing</h2>
                     <h3>Take a look at some of the superior services we offer</h3>
                     <p>Click and drag on the slider to see the difference</p>
                 </div>
