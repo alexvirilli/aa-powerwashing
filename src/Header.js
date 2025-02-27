@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Header.css';
-import brand_logo from "./images/logo.PNG";
+import brand_logo from "./images/new_logo.png";
 import { Helmet } from 'react-helmet';
 
 function Header() {
