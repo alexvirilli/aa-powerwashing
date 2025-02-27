@@ -38,6 +38,8 @@
 .video-overlay h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
+  margin-left: 3vh;
+  margin-right: 3vh;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 

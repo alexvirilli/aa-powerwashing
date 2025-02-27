@@ -86,7 +86,6 @@ const RoofCleaning = () => {
             <h1>Professional Roof Cleaning</h1>
             <p>Extend the life of your roof and enhance your home's curb appeal</p>
             <Link to="/contact" className="contact-button">Get a free quote</Link>
-
           </div>
           <button className="detail-play-pause-btn" onClick={togglePlayPause}>
             <i className={`fas ${isPlaying ? 'fa-pause' : 'fa-play'}`}></i>

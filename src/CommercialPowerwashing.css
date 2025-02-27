@@ -84,7 +84,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 10%;
+    padding-right: 10vh;    
 } 
   
 .detail-video-overlay h1 {
@@ -569,6 +569,7 @@
         margin-left: 1rem;
         margin-right: 1rem;
         padding: 1.5rem;
+        padding-right: 5vh;
     }
 }
 

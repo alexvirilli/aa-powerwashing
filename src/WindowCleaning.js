@@ -84,7 +84,7 @@ const WindowCleaning = () => {
           </video>
           <div className="detail-video-overlay">
             <h1>Professional Window Cleaning</h1>
-            <p>Crystal clear views and enhanced curb appeal for your home or business</p>
+            <p>Crystal clear views and enhanced curb appeal for your home</p>
                 <Link to="/contact" className="contact-button">Get a free quote</Link>
           </div>
           <button className="detail-play-pause-btn" onClick={togglePlayPause}>
