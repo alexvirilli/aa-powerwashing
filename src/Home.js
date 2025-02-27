@@ -109,7 +109,7 @@ function Home() {
 
                 <div class='small-business-blurb'>
 
-                    <p>We are dedicated to meeting the exact needs of our clients.  With A&A, you will be communicating directly with a business representative throughout the entire process.  Take the first step in getting squeaky clean and experience top of line customer service by filling out our <Link to="/contact">contact form</Link>
+                    <p>We are dedicated to meeting the exact needs of our clients.  With A&A, you will be communicating directly with a business representative throughout the entire process.  Take the first step in protecting your home and experience top of line customer service by filling out our <Link to="/contact">contact form</Link>
                     .</p>
 
                 </div>
