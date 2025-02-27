@@ -110,7 +110,7 @@ const Services = () => {
             loop
             playsInline
           >
-            <source src="/videos/service-hero.mp4" type="video/mp4" />
+            <source src="/videos/service-hero.webm" type="video/webm" />
             Your browser does not support the video tag.
           </video>
           <div className="video-overlay">

@@ -79,7 +79,7 @@ const Powerwashing = () => {
             playsInline
             autoPlay
           >
-            <source src="/videos/surface-cleaning.mp4" type="video/mp4" />
+            <source src="/videos/surface-cleaning.webm" type="video/webm" />
             Your browser does not support the video tag.
           </video>
           <div className="detail-video-overlay">
@@ -276,7 +276,7 @@ const Powerwashing = () => {
           <i className="fas fa-arrow-left"></i> Back to Services
         </Link>
       </div>
-      
+
     </div>
   );
 };
