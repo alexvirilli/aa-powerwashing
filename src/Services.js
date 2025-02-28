@@ -115,6 +115,8 @@ const Services = () => {
                 <meta property="og:description" content="A&A Powerwashing offers a variety of services, from paver cleaning to roof washing.  Take a look and explore our practices on this page." />
                 <meta property="og:image" content="./images/new_logo.PNG" />
                 <meta property="og:url" content="https://aapowerwashers.com" />
+                <link rel="stylesheet" href="./src/Services.css" />
+
             </Helmet>
 
         <div className="hero-video-container">
