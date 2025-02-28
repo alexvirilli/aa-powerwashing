@@ -3,18 +3,10 @@ import './Home.css';
 import { Link } from 'react-router-dom';
 import ImageComparison from './ImageComparison';
 
+/* Images */
 import before4 from './images/before4.jpeg';
 import after4 from './images/after4.jpeg';
-// import image1 from './images/home1.jpeg';
-// import image2 from './images/home2.jpeg';
-// import image3 from './images/home3.jpeg';
-// import image4 from './images/home4.jpeg';
-// import image5 from './images/home5.jpeg';
-// import image6 from './images/home6.jpeg';
-// import image7 from './images/home7.jpeg';
-// import image8 from './images/home8.jpeg';
 import image9 from './images/home9.webp';
-// import image10 from './images/home10.jpeg';
 import paver1 from './images/paver1.webp';
 import paver2 from './images/paver2.webp';
 import wall1 from './images/wall1.webp';
@@ -25,8 +17,6 @@ import roof2 from './images/roof2.webp';
 import { Helmet } from 'react-helmet';
 
 function Home() {
-
-    
 
     function scrollToSection() {
         const targetElement = document.getElementById('explainer');
@@ -50,20 +40,6 @@ function Home() {
         }
     }
 
-    // const [currentImage, setCurrentImage] = useState(image1);
-    // const images = [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10];
-
-    // const currentIndex = useRef(0); // Persist current index between renders
-
-    // useEffect(() => {
-    //     const imageCycle = setInterval(() => {
-    //     currentIndex.current = (currentIndex.current + 1) % images.length; // Cycle through the images
-    //     setCurrentImage(images[currentIndex.current]);
-    //     }, 10000); // Change image every second
-
-    //     return () => clearInterval(imageCycle); // Cleanup on component unmount
-    // }, [images]);
-
     return (
         <div>
 
@@ -76,9 +52,6 @@ function Home() {
                 <meta property="og:image" content="./images/new_logo.PNG" />
                 <meta property="og:url" content="https://aapowerwashers.com" />
             </Helmet>
-
-
-           
 
             <section className="hero" style={{ backgroundImage: `url(${image9})` }}>
 
@@ -106,9 +79,6 @@ function Home() {
                 </div>
             
             </section>
-
-            
-
 
             <section className="featured-work">
                 <div className="featured-work-header">
@@ -223,10 +193,6 @@ function Home() {
 
                 </div>
             </footer>
-
-
-            {/* <div className='home-page-padding'>
-            </div> */}
         </div>
         
     );
