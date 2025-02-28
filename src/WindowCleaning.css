@@ -70,7 +70,7 @@
   }
   
   .detail-video {
-    width: 100%;
+    width: auto;
     height: 100%;
     object-fit: cover;
   }
@@ -536,7 +536,6 @@
     .detail-video-overlay p {
       font-size: 1rem; /* Reduce font size */
        max-width: 80%;  /* Prevent overflow */
-       margin: 0 auto;  /* Center text */
     }
     
     .detail-play-pause-btn {
@@ -583,11 +582,13 @@
     
     .detail-video-overlay h1 {
         font-size: 2rem;
+        margin-right: 5vh;
     }
     
     .detail-video-overlay p {
         font-size: 1rem;
-        max-width: 100%;
+        width: auto;
+        margin-right: 5vh;
     }
     
     .detail-play-pause-btn {
