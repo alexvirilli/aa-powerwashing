@@ -46,7 +46,7 @@ function Home() {
             <Helmet>
                 <title>A&A Powerwashing | Home</title>
                 <meta name="description" content="Best in class pressure washing, tailored to your exact needs. Make your home look new again with A&A Powerwashing." />
-                <meta name="keywords" content="powerwashing, pressure washing, power washing, cleaning, home services, A&A Powerwashing, a and a powerwashing, a and a pressure washing" />
+                <meta name="keywords" content="powerwashing, pressure washing, power washing, cleaning, home services, A&A Powerwashing, a and a powerwashing, a and a pressure washing, south jersey powerwashing, sj powerwashing, cherry hill, margate" />
                 <meta property="og:title" content="A&A Powerwashing" />
                 <meta property="og:description" content="Best in class pressure washing, tailored to your exact needs. Make your home look new again with A&A Powerwashing." />
                 <meta property="og:image" content="./images/new_logo.PNG" />
@@ -67,7 +67,7 @@ function Home() {
             <section id="explainer" className="explainer">
                 <div class='choose-the-best'>
 
-                    <h1>Providing Eco-Friendly Solutions to SJ Homes</h1>
+                    <h1>Providing Eco-Friendly Solutions to South Jersey Homes</h1>
                    
                 </div>
 

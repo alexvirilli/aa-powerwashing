@@ -2,6 +2,8 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Services.css';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
+
 // Remove image imports since we'll use Font Awesome icons instead
 
 const Services = () => {
@@ -99,9 +101,22 @@ const Services = () => {
   ];
 
   return (
+
+    
     <div className="services-page">
       {/* Hero Section with Video */}
       <section className="hero-section">
+
+            <Helmet>
+                <title>A&A Powerwashing | Services</title>
+                <meta name="description" content="A&A Powerwashing offers a variety of services, from paver cleaning to roof washing.  Take a look and explore our practices on this page." />
+                <meta name="keywords" content="powerwashing, pressure washing, power washing, cleaning, roof cleaning, window cleaning, commercial powerwashing, trash can cleaning, bin cleaning, home services, A&A Powerwashing, a and a powerwashing, a and a pressure washing, aa powerwashing, aa powerwashers" />
+                <meta property="og:title" content="A&A Powerwashing" />
+                <meta property="og:description" content="A&A Powerwashing offers a variety of services, from paver cleaning to roof washing.  Take a look and explore our practices on this page." />
+                <meta property="og:image" content="./images/new_logo.PNG" />
+                <meta property="og:url" content="https://aapowerwashers.com" />
+            </Helmet>
+
         <div className="hero-video-container">
           <video 
             ref={videoRef}

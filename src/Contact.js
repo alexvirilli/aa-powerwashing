@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import './Contact.css';
 import { Helmet } from 'react-helmet';
+
 function Contact() {
   const [formData, setFormData] = useState({
     name: '', email: '', message: '', services: [], address: '', phone: ''
@@ -61,6 +62,19 @@ function Contact() {
 
   return (
     <div className="contact">
+
+            <Helmet>
+                <title>A&A Powerwashing | Contact</title>
+                <meta name="description" content="Fill out this form and we will be in contact with you for a personalized quote.  We offer free consultations and quotes." />
+                <meta name="keywords" content="contact, powerwashing, pressure washing, power washing, cleaning, roof cleaning, window cleaning, commercial powerwashing, trash can cleaning, bin cleaning, home services, A&A Powerwashing, a and a powerwashing, a and a pressure washing, aa powerwashing, aa powerwashers" />
+                <meta property="og:title" content="A&A Powerwashing" />
+                <meta property="og:description" content="Fill out this form and we will be in contact with you for a personalized quote.  We offer free consultations and quotes." />
+                <meta property="og:image" content="./images/new_logo.PNG" />
+                <meta property="og:url" content="https://aapowerwashers.com" />
+                <link rel="stylesheet" href="./src/Contact.css" />
+
+            </Helmet>
+
       <h2>Complete this form for a personalized quote</h2>
       <form onSubmit={handleSubmit}>
         <input 
