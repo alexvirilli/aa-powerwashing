@@ -156,34 +156,12 @@ const Services = () => {
               <div className="service-content">
                 <h3>{service.title}</h3>
                 <p>{service.description}</p>
-                <span className="learn-more">Learn More</span>
+                <span className="learn-more">Get Started</span>
               </div>
             </div>
           ))}
-        </div>
+        </div> 
       </section>
-
-      <footer className="business-footer">
-                <div className="footer-section contact-info">
-                    <h4>Contact Us</h4>
-                    <p>Text or Call Us: (856) 281-2658</p>
-                    <p>Email: aapowerwashers@gmail.com</p>
-                    <p>Address: 41 Cooper Run Drive, Cherry Hill, USA</p>
-                </div>
-                <div className="footer-section social-links">
-                    <h4>Follow Us</h4>
-                    <a href="https://www.facebook.com/profile.php?id=61559772597900" target="_blank" rel="noopener noreferrer">Facebook</a>
-                    <a href="https://www.instagram.com/aapowerwashers/" target="_blank" rel="noopener noreferrer">Instagram</a>
-                </div>
-                <div className="footer-section business-hours">
-                    <h4>Business Hours</h4>
-                    <p>8:00 AM - 6:00 PM</p>
-                    <p>Monday thru Friday</p>
-
-                </div>
-            </footer>
-
-
     </div>
   );
 };

@@ -10,6 +10,7 @@ import RoofCleaning from './RoofCleaning';
 import BinCleaning from './BinCleaning';
 import GutterCleaning from './GutterCleaning';
 import CommercialPowerwashing from './CommercialPowerwashing';
+import Footer from './Footer';
 
 const Home = lazy(() => import('./Home'));
 const Services = lazy(() => import('./Services'));
@@ -33,6 +34,7 @@ function App() {
           <Route path="/services/CommercialPowerwashing" element={<CommercialPowerwashing />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        <Footer></Footer>
       </Suspense>
     </Router>
   );
