@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './Home.css';
 import { Link } from 'react-router-dom';
+import { Check } from 'lucide-react';
+
 import ImageComparison from './ImageComparison';
 import { FaHome, FaLeaf, FaRoad, FaWarehouse, FaHandSparkles, FaTrash } from 'react-icons/fa';
 
@@ -87,6 +89,48 @@ function Home() {
         }
       ];
 
+      const serviceAreas = [
+        {
+          county: "Atlantic County",
+          towns: ["Margate City", "Ventnor", "Ocean City", "Somers Point"]
+        },
+        {
+          county: "Cape May County",
+          towns: ["Stone Harbor", "Cape May", "Strathmere", "Ocean View", "Sea Isle City", "Cape May Court House", "Avalon", "Wildwood"]
+        },
+        {
+          county: "Burlington County",
+          towns: ["Marlton", "Mount Laurel", "Moorestown", "Medford", "Marlton Lakes", "Medford Lakes", "Delran", "Shamong", "Tabernacle", "Lumberton", "Cinnaminson"]
+        },
+        {
+          county: "Camden County",
+          towns: ["Cherry Hill", "Haddonfield", "Haddon Heights", "Voorhees", "Haddon Township", "Collingswood"]
+        },
+        {
+          county: "Gloucester County",
+          towns: ["Woolwich", "Mullica Hill", "Washington Township", "West Deptford", "Swedesboro"]
+        }
+      ];
+
+      // State to track which counties are expanded/collapsed
+        const [expandedCounties, setExpandedCounties] = useState(
+            serviceAreas.map(area => area.county) // Default all expanded
+        );
+
+        // Toggle county expansion
+        const toggleCounty = (county) => {
+            if (expandedCounties.includes(county)) {
+            setExpandedCounties(expandedCounties.filter(c => c !== county));
+            } else {
+            setExpandedCounties([...expandedCounties, county]);
+            }
+        };
+
+        // Function to create URL-friendly town names
+        const formatTownUrl = (town) => {
+            return town.replace(/\s+/g, '');
+        };
+
     return (
         <div>
 
@@ -167,7 +211,7 @@ function Home() {
                         See how our power washing services removed years of dirt and grime,
                         making these pavers look brand new.
                         </p>
-                        <Link to="/services/Powerwashing" className="contact-button1">Powerwashing</Link>
+                        <Link to="/services/Powerwashing" className="contact-button-before-after">Powerwashing</Link>
 
                     </div>
                 </div>
@@ -181,7 +225,7 @@ function Home() {
                         Our pressure washing restored the beauty of this pool deck, removing
                         stains and buildup with ease.
                         </p>
-                        <Link to="/services/Powerwashing" className="contact-button1">Learn more</Link>
+                        <Link to="/services/Powerwashing" className="contact-button-before-after">Learn more</Link>
 
                     </div>
                 </div>
@@ -195,7 +239,7 @@ function Home() {
                         Check out how we transformed this wall, giving it a fresh, clean
                         appearance after years of neglect.
                         </p>
-                        <Link to="/services/HouseWashing" className="contact-button1">Soft Washing</Link>
+                        <Link to="/services/HouseWashing" className="contact-button-before-after">Soft Washing</Link>
 
                     </div>
                 </div>
@@ -208,13 +252,42 @@ function Home() {
                         <p>
                         Our team erased the black streaks on this roof, returning it to its former glory.
                         </p>
-                        <Link to="/services/RoofCleaning" className="contact-button1">Roof Cleaning</Link>
+                        <Link to="/services/RoofCleaning" className="contact-button-before-after">Roof Cleaning</Link>
 
                     </div>
                 </div>
 
             </div>
             </section>
+
+            <section className='service-areas'>
+            <div className="service-areas-container">
+      <h2 className="service-areas-title">Areas We Service</h2>
+      <p className="service-areas-subtitle">Professional pressure washing services available in these locations</p>
+      
+      <div className="counties-grid">
+        {serviceAreas.map((area) => (
+          <div key={area.county} className="county-card">
+            <div className="county-header">
+              <h3>{area.county}</h3>
+            </div>
+            
+            <ul className="towns-list">
+              {area.towns.map((town) => (
+                <li key={town} className="town-item">
+                  <a href={`./${formatTownUrl(town)}`} className="town-link">
+                    <Check size={16} className="check-icon" />
+                    <span>{town}</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </div>
+    </section>
+         
 
             <section className="customer-reviews">
                 <h2>Real People, Real Reviews</h2>

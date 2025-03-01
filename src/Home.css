@@ -226,7 +226,8 @@ body, html {
 
 #explainer {
     display: flex;
-    background-color: #0b4d8c;
+    /* background-color: #0b4d8c; */
+    background-color: #0045F3;
     justify-content: center;
     align-items: center;
 }
@@ -323,71 +324,240 @@ body, html {
 
 .featured-work {
     background-color: #F2F0EF;
-    /* background-color: #f9f9f9; */
-    /* background-color: #cd4d44; */
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .featured-work-header {
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .featured-work-header h2 {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-weight: 700;
+    color: #4A4A4A;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+  }
+  
+  .featured-work-header h3 {
+    font-size: clamp(1.1rem, 3vw, 1.5rem);
+    font-weight: 500;
+    color: #757575;
+    margin-top: 0;
+  }
+  
+  .featured-work-header p {
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
+    margin-top: 15px;
+  }
+  
+  .featured-work div {
+    background-color: #F2F0EF;
+  }
+  
+  .compare-image-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 30px auto 0;
+  }
+  
+  .image-and-review {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 0 15px;
+  }
+  
+  .image-container {
+    flex: 1;
+    width: 100%;
+    max-height: 500px;
+    min-width: 0; /* Allows proper shrinking */
+  }
+  
+  .review-text {
+    flex: 1;
+    text-align: left;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .contact-button-before-after {
+    align-self: center;
+  }
+  
+  .review-text h3 {
+    margin: 0;
+    font-size: clamp(1.2rem, 3vw, 1.5rem);
+    color: #333;
+  }
+  
+  .review-text p {
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    color: #555;
+    line-height: 1.6;
+    margin: 0 0 15px;
+  }
+  
+  .contact-button-before-after {
+    display: inline-block;
+    background-color: #cd4d44;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    margin-top: 5px;
+    align-self: flex-start;
+  }
+  
+  .contact-button-before-after:hover {
+    background-color: #b23c33;
+  }
+  
+  /* Improved responsiveness with multiple breakpoints */
+  @media (max-width: 1024px) {
+    .compare-image-container {
+      gap: 30px;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .image-and-review {
+      gap: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .featured-work {
+      padding: 40px 15px;
+    }
+    
+    .featured-work-header {
+      margin: 10px 0 20px;
+    }
+    
+    .compare-image-container {
+      gap: 30px;
+    }
+    
+    .image-and-review {
+      flex-direction: column;
+      gap: 15px;
+    }
+    
+    .image-container {
+      max-width: 100%;
+      width: 100%;
+    }
+    
+    .review-text {
+      width: 100%;
+      padding: 0;
+      align-items: center;
+      text-align: center;
+    }
+
+    .contact-button-before-after{
+        align-self: center;
+    }
+    
+    
+  }
+  
+  @media (max-width: 480px) {
+    .featured-work {
+      padding: 30px 10px;
+    }
+    
+    .compare-image-container {
+      gap: 25px;
+    }
+    
+    .review-text h3 {
+      margin-bottom: 5px;
+    }
+    
+    .review-text p {
+      margin-bottom: 10px;
+    }
+  }
+
+/* .featured-work {
+    background-color: #F2F0EF;
     padding: 50px 20px;
     text-align: center;
 }
 
 .featured-work-header {
-    text-align: center; /* Center-align the text */
-    margin: 20px 0; /* Add spacing around the section */
-    color: #333; /* Dark text color for a professional look */
+    text-align: center; 
+    margin: 20px 0; 
+    color: #333; 
 }
 
 .featured-work-header h2 {
-    font-size: 2rem; /* Larger font size for the primary heading */
-    font-weight: 700; /* Bold font for emphasis */
-    color: #4A4A4A; /* Slightly muted dark gray */
-    margin-bottom: 10px; /* Space below the heading */
-    text-transform: capitalize; /* Ensure consistent capitalization */
+    font-size: 2rem; 
+    font-weight: 700; 
+    color: #4A4A4A;
+    margin-bottom: 10px; 
+    text-transform: capitalize; 
 }
 
 .featured-work-header h3 {
-    font-size: 1.5rem; /* Slightly smaller font for the subheading */
-    font-weight: 500; /* Medium weight for a subtle contrast */
-    color: #757575; /* Softer gray for secondary text */
-    margin-top: 0; /* Remove default margin above */
+    font-size: 1.5rem; 
+    font-weight: 500; 
+    color: #757575; 
+    margin-top: 0; 
 }
 
 @media (max-width: 768px) {
     .featured-work-header h2 {
-        font-size: 1.8rem; /* Slightly reduce size on smaller screens */
+        font-size: 1.8rem; 
     }
 
     .featured-work-header h3 {
-        font-size: 1.2rem; /* Adjust subheading size */
+        font-size: 1.2rem; 
     }
 }
 
 
 .featured-work div {
-    /* background-color: #cd4d44; */
     background-color: #F2F0EF;
 }
 
 .compare-image-container {
     display: flex;
-    flex-direction: column; /* Stack each image-and-review block vertically */
+    flex-direction: column; 
     gap: 20px;
 }
 
 .image-and-review {
     display: flex;
-    align-items: center; /* Vertically align the image and text */
+    align-items: center; 
     gap: 20px;
 }
 
 .image-container {
-    flex: 1; /* Ensure images take equal width */
-    max-width: 100%; /* Allow full width */
-    min-width: 50vh; /* Limit the width of the image */
+    flex: 1; 
+    max-width: 100%; 
+    min-width: 50vh; 
     flex-shrink: 0;
 }
 
 .review-text {
-    flex: 1; /* Ensure text takes equal width */
-    text-align: left; /* Align text to the left */
+    flex: 1; 
+    text-align: left; 
 }
 
 .review-text h3 {
@@ -399,96 +569,29 @@ body, html {
 .review-text p {
     font-size: 1rem;
     color: #555;
-    line-height: 1.5;
-}
+    line-height: 1.5; 
+}*/
 
-/* ### MEDIA QUERIES FOR BEFORE N AFTAHS */
 
-@media (max-width: 768px) {
+/* ### MEDIA QUERIES FOR BEFORE AND AFTERS */
+
+/* @media (max-width: 768px) {
     .image-and-review {
-        flex-direction: column; /* Stack image and text vertically */
-        text-align: center; /* Center-align text for smaller screens */
+        flex-direction: column; 
+        text-align: center; 
     }
 
     .image-container {
-        max-width: 100%; /* Allow image to take full width */
+        max-width: 100%; 
     }
 
     .review-text {
-        text-align: center; /* Center-align text */
+        text-align: center; 
     }
-}
+} */
 
 
-.featured-work article {
-    margin: 20px;
-    padding: 20px;
-    background: #f9f9f9;
-    border-radius: 5px;
-}
 
-.testimonials {
-    background-color: #F2F0EF;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.testimonials h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.testimonials blockquote {
-    font-style: italic;
-    color: #555;
-}
-
-.faq {
-    background: #F2F0EF;
-    padding: 50px;
-    height: auto;
-}
-
-.faq h2 {
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.accordion-item {
-    border-bottom: 1px solid #F2F0EF;
-    padding: 15px;
-}
-
-.accordion-title {
-    font-size: 24px;
-    cursor: pointer;
-    padding: 10px 5px;
-    color: #007BFF;
-    text-align: left;
-}
-
-.accordion-content {
-    padding: 10px 5px;
-}
-
-.accordion-content p {
-    margin: 0;
-    font-size: 18px;
-}
-
-.end-padding {
-    padding-bottom: 50px;
-}
-
-.home-page-padding {
-    height: 20vh;
-}
-
-
-.footer-home {
-    height: 50vh;
-}
 
 /* Responsive Design */
 @media (max-width: 1200px) {
@@ -716,3 +819,125 @@ body, html {
 }
 
 
+/* AREAS WE SERVICE */
+
+.service-areas {
+    background-color: #F2F0EF;
+}
+
+.service-areas-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .service-areas-title {
+    text-align: center;
+    color: #1e3a8a;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .service-areas-subtitle {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 2.5rem;
+  }
+  
+  .counties-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .county-card {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .county-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .county-header {
+    padding: 1.25rem 1.5rem;
+    background: linear-gradient(to right, #1e3a8a, #2563eb);
+    color: white;
+  }
+  
+  .county-header h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  .towns-list {
+    list-style: none;
+    padding: 1rem 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .town-item {
+    padding: 0.5rem 1.5rem;
+    transition: background-color 0.2s ease;
+    width: 50%;
+    box-sizing: border-box;
+  }
+  
+  .town-item:hover {
+    background-color: #f1f5f9;
+  }
+  
+  .town-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #334155;
+    padding: 0.25rem 0;
+    width: 100%;
+  }
+  
+  .check-icon {
+    color: #22c55e;
+    margin-right: 0.75rem;
+    flex-shrink: 0;
+  }
+  
+  /* For single column on smallest screens */
+  @media (max-width: 480px) {
+    .town-item {
+      width: 100%;
+    }
+  }
+  
+  /* Responsive design */
+  @media (min-width: 640px) {
+    .counties-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .counties-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /* For hover effects on non-touch devices only */
+  @media (hover: hover) {
+    .town-link:hover {
+      color: #1e3a8a;
+      font-weight: 500;
+    }
+    
+    .town-item:hover .check-icon {
+      transform: scale(1.2);
+    }
+  }

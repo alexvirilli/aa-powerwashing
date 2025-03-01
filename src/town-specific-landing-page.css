@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+/* Base Styles */
+.town-page {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.town-hero {
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.town-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 60, 120, 0.5);
+    z-index: 1;
+}
+
+.town-hero-content {
+    z-index: 2;
+    max-width: 800px;
+    padding: 0 20px;
+    animation: fadeInUp 1s ease-out;
+}
+
+.town-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.town-hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.town-cta-button {
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: #cf4d41;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+    border: none;
+    cursor: pointer;
+}
+
+.town-cta-button:hover {
+    background-color: #b33f34;
+    transform: translateY(-2px);
+}
+
+/* Town Intro Section */
+.town-intro {
+    padding: 60px 20px;
+    background-color: white;
+}
+
+.town-intro-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.town-intro h2 {
+    font-size: 2.2rem;
+    color: #003c78;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.town-intro p {
+    font-size: 1.1rem;
+    max-width: 900px;
+    margin: 0 auto 40px;
+    text-align: center;
+    color: #555;
+}
+
+.town-features {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.town-feature {
+    flex: 1;
+    min-width: 250px;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.town-feature:hover {
+    transform: translateY(-5px);
+}
+
+.town-feature-icon {
+    color: #003c78;
+    margin-bottom: 15px;
+}
+
+.town-feature h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.town-feature p {
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
+    text-align: center;
+}
+
+/* Services Section */
+.town-services {
+    padding: 80px 20px;
+    background-color: #f2f0ef;
+}
+
+.town-services-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.town-services h2 {
+    font-size: 2.2rem;
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.town-services-tagline {
+    font-size: 1.1rem;
+    text-align: center;
+    color: #666;
+    margin-bottom: 50px;
+}
+
+.town-services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.town-service-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.town-service-card:hover {
+    transform: translateY(-5px);
+}
+
+.town-service-icon {
+    font-size: 2rem;
+    color: #003c78;
+    margin-bottom: 20px;
+}
+
+.town-service-title {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.town-service-description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.town-service-button {
+    background-color: #cf4d41;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    display: inline-block;
+    margin-top: auto;
+}
+
+.town-service-button:hover {
+    background-color: #b33f34;
+}
+
+/* Benefits Section */
+.town-benefits {
+    padding: 70px 20px;
+    background-color: #003c78;
+    color: white;
+}
+
+.town-benefits-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.town-benefits h2 {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.town-benefits-content {
+    display: flex;
+    justify-content: center;
+}
+
+.town-benefits-text {
+    max-width: 800px;
+}
+
+.town-benefits-text p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+.town-secondary-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 20px;
+}
+
+.town-secondary-button:hover {
+    background-color: white;
+    color: #003c78;
+}
+
+/* Showcase Section */
+.town-showcase {
+    padding: 70px 20px;
+    background-color: white;
+}
+
+.town-showcase-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.town-showcase h2 {
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.town-showcase-header p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.town-comparison-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.town-comparison-item {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.town-image-container {
+    flex: 1;
+    min-width: 50%;
+}
+
+.town-comparison-text {
+    flex: 1;
+}
+
+.town-comparison-text h3 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.town-comparison-text p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.town-service-link {
+    /* color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+    background-color: #cf4d41;
+    padding: 5px 10px;
+    border-radius: 8px; */
+    z-index: 99;
+    display: inline-block;
+    margin-top: 20px; 
+    padding: 10px 20px;
+    background-color: #cf4d41; 
+    color: white; 
+    font-size: 18px;
+    text-decoration: none; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: auto;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.town-service-link:hover {
+    background-color: #b33f34;
+}
+
+/* Testimonials Section */
+.town-testimonials {
+    padding: 70px 20px;
+    background-color: #f2f0ef;
+    text-align: center;
+}
+
+.town-testimonials h2 {
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.town-testimonials-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.town-testimonial {
+    flex: 1;
+    min-width: 300px;
+    max-width: 350px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    text-align: left;
+}
+
+.town-testimonial p {
+    font-style: italic;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.town-testimonial span {
+    display: block;
+    font-weight: 600;
+    color: #333;
+}
+
+/* CTA Section */
+.town-cta {
+    padding: 70px 20px;
+    background-color: #003c78;
+    color: white;
+    text-align: center;
+}
+
+.town-cta-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.town-cta h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.town-cta p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .town-services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .town-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .town-hero p {
+        font-size: 1.2rem;
+    }
+    
+    .town-services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .town-comparison-item {
+        flex-direction: column;
+    }
+    
+    .town-image-container {
+        min-width: 100%;
+    }
+    
+    .town-testimonials-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .town-testimonial {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .town-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .town-hero p {
+        font-size: 1rem;
+    }
+    
+    .town-cta-button, .town-secondary-button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+    
+    .town-intro h2, .town-services h2, .town-benefits h2, 
+    .town-showcase h2, .town-testimonials h2, .town-cta h2 {
+        font-size: 1.8rem;
+    }
+}

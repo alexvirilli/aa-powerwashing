@@ -175,7 +175,7 @@ function Contact() {
                   name="services" 
                   value="Trash Can Cleaning" 
                   onChange={handleChange} 
-                /> Trash Ban Cleaning
+                /> Trash Can Cleaning
               </label>
             </div>
         </div>
