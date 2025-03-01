@@ -91,6 +91,10 @@ function Home() {
 
       const serviceAreas = [
         {
+            county: "Camden County",
+            towns: ["Cherry Hill", "Haddonfield", "Haddon Heights", "Voorhees", "Haddon Township", "Collingswood"]
+          },
+        {
           county: "Atlantic County",
           towns: ["Margate City", "Ventnor", "Ocean City", "Somers Point"]
         },
@@ -102,10 +106,7 @@ function Home() {
           county: "Burlington County",
           towns: ["Marlton", "Mount Laurel", "Moorestown", "Medford", "Marlton Lakes", "Medford Lakes", "Delran", "Shamong", "Tabernacle", "Lumberton", "Cinnaminson"]
         },
-        {
-          county: "Camden County",
-          towns: ["Cherry Hill", "Haddonfield", "Haddon Heights", "Voorhees", "Haddon Township", "Collingswood"]
-        },
+        
         {
           county: "Gloucester County",
           towns: ["Woolwich", "Mullica Hill", "Washington Township", "West Deptford", "Swedesboro"]
