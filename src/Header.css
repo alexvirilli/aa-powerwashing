@@ -248,7 +248,7 @@
   }
   
   .header .nav-links a {
-    width: 100%;
+    width: auto;
     text-align: left;
     font-size: 18px;
     padding: 15px;
@@ -257,7 +257,7 @@
   
   /* Mobile Dropdown */
   .dropdown {
-    width: 100%;
+    width: auto;
     flex-direction: column;
     align-items: stretch;
   }
@@ -265,7 +265,7 @@
   .dropdown-header {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: auto;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     padding: 0;
   }
