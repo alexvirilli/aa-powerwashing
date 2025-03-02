@@ -11,6 +11,7 @@ import BinCleaning from './BinCleaning';
 import GutterCleaning from './GutterCleaning';
 import CommercialPowerwashing from './CommercialPowerwashing';
 import Footer from './Footer';
+import Gallery from './Gallery';
 
 
 import MargateCity from './MargateCity';
@@ -78,6 +79,8 @@ function App() {
           <Route path="/services/GutterCleaning" element={<GutterCleaning />} />
           <Route path="/services/CommercialPowerwashing" element={<CommercialPowerwashing />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/Gallery" element={<Gallery />} />
+
           
           <Route path="/MargateCity" element={<MargateCity />}></Route>
           <Route path="/Ventnor" element={<Ventnor />}></Route>

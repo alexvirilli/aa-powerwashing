@@ -218,7 +218,7 @@
     flex-direction: column;
     align-items: stretch;
     position: fixed;
-    top: 12.5vh;
+    top: 11vh;
     left: 0;
     right: 0;
     bottom: 0;
@@ -271,7 +271,7 @@
   }
   
   .dropbtn {
-    width: 100%;
+    width: auto;
     text-align: left;
     padding: 15px;
     font-size: 18px;

@@ -153,6 +153,12 @@ function Home() {
                     <h1>South Jersey's Premier Pressure Washing Service</h1>
                     <Link to="/contact" className="contact-button1">Get a free quote</Link>
                 </div>
+
+                <svg className="hero-curve" viewBox="0 0 1440 320">
+                <path fill="#F2F0EF" fillOpacity="1"
+                    d="M0,280 C180,300 360,300 540,290 C720,280 900,260 1080,265 C1260,270 1440,290 1440,320 L0,320 Z">
+                </path>
+            </svg>
                 
             </section>
 
@@ -176,23 +182,24 @@ function Home() {
                 </div>
             </section>
 
-            <div class="spacer"></div>
 
             <section id="explainer" className="explainer">
+
+                <div className='blurb-container'>
+
                 <div class='choose-the-best'>
-
                     <h1>Providing Eco-Friendly Solutions to South Jersey Homes</h1>
-                   
                 </div>
-
                 <div class='small-business-blurb'>
-
-                    <p>We are dedicated to meeting the exact needs of our clients.  With A&A, you will be communicating directly with a business representative throughout the entire process.  Take the first step in protecting your home and experience top of line customer service by filling out our <Link to="/contact">contact form</Link>
-                    .</p>
+                    <p>We are dedicated to meeting the exact needs of our clients.  With A&A, you will be communicating directly with a business representative throughout the entire process.  Take the first step in protecting your home and experience top of line customer service by filling out our <Link to="/contact">contact form</Link>.</p>
+                </div>
 
                 </div>
             
+               
+                
             </section>
+
 
             <section className="featured-work">
                 <div className="featured-work-header">
@@ -288,6 +295,10 @@ function Home() {
       </div>
     </div>
     </section>
+
+    <div className="section-divider">
+            <hr className="divider-line" />
+        </div>
          
 
             <section className="customer-reviews">

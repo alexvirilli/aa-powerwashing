@@ -8,10 +8,20 @@ body, html {
     background: #f9f9f9;
 }
 
+.hero-curve {
+    position: absolute;
+    bottom: -1px; /* Keeps it aligned at the bottom */
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 10;
+}
+
+
 .hero {
     color: #f9f9f9;
     text-align: center;
-    height: 80vh; 
+    height: 75vh; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,19 +63,9 @@ body, html {
     justify-content: center;
     text-align: center;
     height: 100%;
+    z-index: 15;
 }
-/* 
-.landing-contact h1 {
-    padding: 10px;
-    border-radius: 8px;
-} */
 
-
-.spacer {
-    height: 1vh;
-    background: white;
-
-}
 
 .hero-overlay {
     background: rgba(212, 158, 158, 0.7); 
@@ -112,9 +112,10 @@ body, html {
 /* Services */
 
 .services-section-home {
-    width: 100%;
+    width: auto;
     background-color: #F2F0EF;
-    padding: 60px 0;
+    padding: 10px;
+    padding-bottom: 10vh;
   }
   
   .services-container-home {
@@ -223,13 +224,46 @@ body, html {
   }
 
 /* Explainer */
+  
+
 
 #explainer {
     display: flex;
+    flex-direction: column;
     /* background-color: #0b4d8c; */
     background-color: #0045F3;
     justify-content: center;
     align-items: center;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    padding-left: 3vh;
+    padding-right: 3vh;
+
+
+}
+
+.explainer {
+    background-color: #0045F3;
+    text-align: left;
+}
+
+.explainer h1 {
+    padding: 40px 10px 10px;
+    text-align: left;
+    justify-content: center;
+}
+
+.explainer p {
+    padding: 20px 100px 10px;
+    line-height: 2;
+    font-size: 20px;
+    text-indent: 30px;
+}
+
+.blurb-container {
+    display: flex;
+    flex-direction: row;
+    z-index: 10;
 }
 
 .explainer h1 {
@@ -301,24 +335,7 @@ body, html {
     }
 }
 
-.explainer {
-    background-color: #f9f9f9;
-    padding: 50px 20px;
-    text-align: left;
-}
 
-.explainer h1 {
-    padding: 40px 10px 10px;
-    text-align: left;
-    justify-content: center;
-}
-
-.explainer p {
-    padding: 20px 100px 10px;
-    line-height: 2;
-    font-size: 20px;
-    text-indent: 30px;
-}
 
 /* ### BEFORE AND AFTERS */
 
@@ -614,6 +631,11 @@ body, html {
     #explainer{
         display: block;
     }
+
+    .blurb-container {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 992px) {
@@ -672,6 +694,7 @@ body, html {
 
     .explainer p {
         padding: 20px 20px 10px;
+        font-size: 12px;
     }
 }
 
@@ -941,3 +964,23 @@ body, html {
       transform: scale(1.2);
     }
   }
+
+  /* Line divider */
+
+  .section-divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0; /* Adds space above and below */
+    background-color: #F2F0EF;
+}
+
+.divider-line {
+    width: 80%; /* Makes it responsive */
+    max-width: 600px; /* Prevents it from getting too wide */
+    height: 4px; /* Line thickness */
+    background: linear-gradient(to right, #0045F3, #00C9FF); /* Gradient effect */
+    border: none;
+    border-radius: 2px; /* Soft edges */
+}
