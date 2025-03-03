@@ -11,7 +11,6 @@ import BinCleaning from './BinCleaning';
 import GutterCleaning from './GutterCleaning';
 import CommercialPowerwashing from './CommercialPowerwashing';
 import Footer from './Footer';
-import Gallery from './Gallery';
 
 
 import MargateCity from './MargateCity';
@@ -61,6 +60,8 @@ import Swedesboro from './Swedesboro';
 const Home = lazy(() => import('./Home'));
 const Services = lazy(() => import('./Services'));
 const Contact = lazy(() => import('./Contact'));
+const Gallery = lazy(() => import('./Gallery'));
+
 
 function App() {
   return (

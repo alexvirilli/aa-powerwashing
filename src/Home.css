@@ -114,6 +114,7 @@ body, html {
 .services-section-home {
     width: auto;
     background-color: #F2F0EF;
+    /* background-color: #4A4A4A; */
     padding: 10px;
     padding-bottom: 10vh;
   }
@@ -127,6 +128,7 @@ body, html {
   .services-heading-home {
     font-size: 36px;
     color: #4A4A4A;
+    /* color: #F2F0EF; */
     text-align: center;
     margin-bottom: 10px;
     font-weight: 700;
@@ -135,6 +137,7 @@ body, html {
   .services-tagline-home {
     font-size: 18px;
     color: #666666;
+    /* color: #F2F0EF; */
     text-align: center;
     margin-bottom: 50px;
   }

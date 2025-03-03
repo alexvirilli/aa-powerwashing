@@ -110,7 +110,9 @@ function Header() {
             <NavLink to="/services/CommercialPowerwashing" className={({isActive}) => isActive ? "active" : ""} onClick={closeMenu}>Commercial</NavLink>
           </div>
         </div>
-        
+
+        <NavLink to="/gallery" className={({isActive}) => isActive ? "active" : ""} onClick={closeMenu}>Gallery</NavLink>
+
         <NavLink to="/contact" className={({isActive}) => isActive ? "active" : ""} onClick={closeMenu}>Contact</NavLink>
       </nav>
     </header>

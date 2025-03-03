@@ -139,7 +139,10 @@ const Services = () => {
           <button id="play-pause-btn" onClick={togglePlayPause}>
             <i className={`fas ${isPlaying ? 'fa-pause' : 'fa-play'}`}></i>
           </button>
+
         </div>
+
+
       </section>
 
       {/* Services Section with Buttons */}

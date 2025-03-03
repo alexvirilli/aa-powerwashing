@@ -7,25 +7,27 @@
   }
   
   /* Hero Section */
-  .hero-section {
+  .gallery-hero-section {
     position: relative;
     height: 300px;
   }
   
-  .hero-image {
+  .gallery-hero-image {
     height: 100%;
     width: 100%;
-    background-color: #1e3a8a;
+    /* background-color: #1e3a8a; */
+    background: linear-gradient(to top, #1e3a8a 0%, #3551a4 50%, #0045F3 100%);
+
   }
   
-  .hero-image img {
+  .gallery-hero-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     opacity: 0.4;
   }
   
-  .hero-content {
+  .gallery-hero-content {
     position: absolute;
     inset: 0;
     display: flex;
@@ -33,27 +35,37 @@
     justify-content: center;
   }
   
-  .hero-text {
+  .gallery-hero-text {
     text-align: center;
     color: white;
     padding: 0 1rem;
     max-width: 800px;
   }
   
-  .hero-text h1 {
+  .gallery-hero-text h1 {
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
   }
   
-  .hero-text p {
+  .gallery-hero-text p {
     font-size: 1.25rem;
   }
+
+  .gallery-hero-divider {
+    display: block;
+    width: auto;
+    height: auto;
+    transform: rotate(180deg);
+    margin-top: -1px;
+}
+
+
   
   /* Introduction Section */
   .intro-section {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: -6vh auto;
     padding: 3rem 1rem;
   }
   
@@ -107,7 +119,7 @@
   }
   
   .filter-buttons button.active {
-    background-color: #2563eb;
+    background-color: #46B8FF;
     color: white;
   }
   
@@ -123,11 +135,13 @@
     border-radius: 0.5rem;
     overflow: hidden;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
   .gallery-item:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    transform: scale(1.02); /* Small scale-up effect */
   }
   
   .item-image {
@@ -181,7 +195,7 @@
   }
   
   /* Before & After Section */
-  .before-after-section {
+.before-after-section {
     background-color: #f3f4f6;
     padding: 4rem 1rem;
   }
@@ -201,8 +215,21 @@
   
   .before-after-grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
+  }
+  
+  /* Add responsive grid breakpoints */
+  @media (min-width: 640px) {
+    .before-after-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .before-after-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
   
   .before-after-item {
@@ -210,22 +237,33 @@
     border-radius: 0.5rem;
     overflow: hidden;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
   
   .comparison-container {
     display: flex;
     flex-direction: column;
+    height: 100%;
   }
   
   .comparison-image {
     position: relative;
-    flex: 1;
+    width: 100%;
+    /* Set a consistent aspect ratio for all images */
+    padding-top: 75%; /* 4:3 aspect ratio */
+    overflow: hidden;
   }
   
   .comparison-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
   }
   
   .comparison-label {
@@ -237,37 +275,62 @@
     text-align: center;
     font-weight: 500;
     font-size: 0.875rem;
+    z-index: 1;
   }
   
   .comparison-label.before {
-    background-color: #fee2e2;
+    background-color: rgba(254, 226, 226, 0.9); /* Semi-transparent background */
     color: #b91c1c;
   }
   
   .comparison-label.after {
-    background-color: #d1fae5;
+    background-color: rgba(209, 250, 229, 0.9); /* Semi-transparent background */
     color: #065f46;
   }
   
   .comparison-content {
-    padding: 1rem;
+    padding: 1.25rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
   }
   
   .comparison-content h3 {
     font-size: 1.125rem;
     font-weight: 600;
     color: #1f2937;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
   }
   
   .comparison-content p {
     color: #4b5563;
+    margin-bottom: 0;
+  }
+  
+  /* Add responsiveness to spacing and font sizes */
+  @media (max-width: 640px) {
+    .before-after-section {
+      padding: 3rem 1rem;
+    }
+    
+    .before-after-content h2 {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    
+    .comparison-content h3 {
+      font-size: 1rem;
+    }
+    
+    .comparison-content p {
+      font-size: 0.875rem;
+    }
   }
   
   /* Testimonial Section */
   .testimonial-section {
-    background-color: white;
-    padding: 4rem 1rem;
+    background-color: #f3f4f6;
+    padding: 1rem 2rem 2rem;
   }
   
   .testimonial-content {
@@ -331,7 +394,7 @@
   
   /* CTA Section */
   .cta-section {
-    background-color: #0045EF;
+    background-color: #46B8FF;
     padding: 3rem 1rem;
   }
   
@@ -349,7 +412,7 @@
   }
   
   .cta-content p {
-    color: #bfdbfe;
+    color: white;
     margin-bottom: 2rem;
     font-size: 1.125rem;
   }
