@@ -17,6 +17,8 @@ import short_hills from './images/home1.webp';
 import brick_before from './images/gallery-brick-walkway-before.webp';
 import brick_after from './images/gallery-brick-walkway-after.webp';
 import { Contact } from 'lucide-react';
+import { Helmet } from 'react-helmet';
+
 
 const Gallery = () => {
   // Sample gallery data - replace with your actual project images and descriptions
@@ -93,7 +95,23 @@ const Gallery = () => {
     : galleryItems.filter(item => item.category === filter);
 
   return (
+
+    
     <div className="gallery-container">
+
+            <Helmet>
+                <title>A&A Powerwashing | Gallery</title>
+                <meta name="description" content="Best in class pressure washing, tailored to your exact needs. Make your home look new again with A&A Powerwashing." />
+                <meta name="keywords" content="powerwashing, pressure washing, power washing, cleaning, home services, A&A Powerwashing, a and a powerwashing, a and a pressure washing, south jersey powerwashing, sj powerwashing, cherry hill, margate" />
+                <meta property="og:title" content="A&A Powerwashing" />
+                <meta property="og:description" content="Best in class pressure washing, tailored to your exact needs. Make your home look new again with A&A Powerwashing." />
+                <meta property="og:image" content="./images/new_logo.PNG" />
+                <meta property="og:url" content="https://aapowerwashers.com" />
+                <link rel="stylesheet" href="./src/Gallery.css" />
+
+            </Helmet>
+
+
       {/* Hero Section */}
       <div className="gallery-hero-section">
         <div className="gallery-hero-image">
