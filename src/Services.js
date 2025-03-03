@@ -146,19 +146,19 @@ const Services = () => {
       </section>
 
       {/* Services Section with Buttons */}
-      <section className="services-section">
-        <h2 className="services-title">Our Services</h2>
-        <div className="service-buttons-container">
+      <section className="page-services-section">
+        <h2 className="page-services-title">Our Services</h2>
+        <div className="page-service-buttons-container">
           {services.map((service) => (
             <div 
               key={service.id}
-              className={`service-button image-${service.imagePosition}`}
+              className={`page-service-button image-${service.imagePosition}`}
               onClick={() => handleServiceClick(service.url)}
             >
-              <div className="service-icon">
+              <div className="page-service-icon">
                 <i className={service.iconClass}></i>
               </div>
-              <div className="service-content">
+              <div className="page-service-content">
                 <h3>{service.title}</h3>
                 <p>{service.description}</p>
                 <span className="learn-more">Get Started</span>

@@ -18,6 +18,7 @@ import wall2 from './images/wall2.webp';
 import roof1 from './images/roof1.webp';
 import roof2 from './images/roof2.webp';
 
+
 import { Helmet } from 'react-helmet';
 
 function Home() {

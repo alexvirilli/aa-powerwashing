@@ -79,27 +79,27 @@
   padding-bottom: 50px;
 }
 
-.services-section {
+.page-services-section {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
 
-.services-title {
+.page-services-title {
   text-align: center;
   margin-bottom: 40px;
   font-size: 2.5rem;
   color: #ffffff;
 }
 
-.service-buttons-container {
+.page-service-buttons-container {
   display: flex;
   flex-direction: column;
   gap: 30px;
   width: 100%;
 }
 
-.service-button {
+.page-service-button {
   display: flex;
   align-items: center;
   padding: 0;
@@ -113,22 +113,22 @@
   width: 100%;
 }
 
-.service-button:hover {
+.page-service-button:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   border-color: #0078d4;
 }
 
-.service-button.image-left {
+.page-service-button.image-left {
   flex-direction: row;
 }
 
-.service-button.image-right {
+.page-service-button.image-right {
   flex-direction: row-reverse;
 }
 
 /* Icon container styling */
-.service-icon {
+.page-service-icon {
   width: 40%;
   height: 100%;
   display: flex;
@@ -140,43 +140,43 @@
   overflow: hidden;
 }
 
-.service-button:hover .service-icon {
+.page-service-button:hover .service-icon {
   background-color: #d0e6f7;
 }
 
 /* Icon styling */
-.service-icon i {
+.page-service-icon i {
   font-size: 5rem; /* Large icon size */
   transition: transform 0.5s ease, color 0.3s ease;
 }
 
-.service-button:hover .service-icon i {
+.page-service-button:hover .service-icon i {
   transform: scale(1.1);
   color: #0056b3;
 }
 
-.service-content {
+.page-service-content {
   width: 60%;
   padding: 20px;
   text-align: left;
 }
 
-.service-button.image-right .service-content {
+.page-service-button.image-right .service-content {
   text-align: right;
 }
 
-.service-content h3 {
+.page-service-content h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
   color: #333;
   transition: color 0.3s ease;
 }
 
-.service-button:hover .service-content h3 {
+.page-service-button:hover .service-content h3 {
   color: #0078d4;
 }
 
-.service-content p {
+.page-service-content p {
   font-size: 1rem;
   color: #666;
   margin-bottom: 15px;
@@ -196,18 +196,18 @@
   transition: transform 0.3s ease;
 }
 
-.service-button:hover .learn-more::after {
+.page-service-button:hover .learn-more::after {
   transform: translateX(5px);
 }
 
 /* Add a class for the button press animation */
-.service-button:active {
+.page-service-button:active {
   transform: scale(0.98);
 }
 
 /* Responsive adjustments */
 @media (max-width: 992px) {
-  .service-icon i {
+  .page-service-icon i {
     font-size: 4rem; /* Slightly smaller on medium screens */
   }
 }
@@ -225,48 +225,48 @@
     font-size: 1.2rem;
   }
   
-  .service-button {
+  .page-service-button {
     flex-direction: column !important;
     height: auto;
   }
   
-  .service-icon,
-  .service-content {
+  .page-service-icon,
+  .page-service-content {
     width: 100%;
   }
   
-  .service-icon {
+  .page-service-icon {
     height: 180px;
     padding: 30px 0;
   }
   
-  .service-icon i {
+  .page-service-icon i {
     font-size: 4.5rem; /* Maintain good size on mobile */
   }
   
-  .service-button.image-right .service-content {
+  .page-service-button.image-right .service-content {
     text-align: left;
   }
 
-  .service-content {
+  .page-service-content {
     text-align: center;
   }
 }
 
 @media (max-width: 480px) {
-  .service-icon {
+  .page-service-icon {
     height: 150px;
   }
   
-  .service-icon i {
+  .page-service-icon i {
     font-size: 3.5rem; /* Smaller on very small screens */
   }
   
-  .service-content h3 {
+  .page-service-content h3 {
     font-size: 1.3rem;
   }
   
-  .service-content p {
+  .page-service-content p {
     font-size: 0.9rem;
     text-align: center;
   }

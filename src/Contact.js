@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import './Contact.css';
 import { Helmet } from 'react-helmet';
@@ -61,132 +60,354 @@ function Contact() {
   };
 
   return (
-    <div className="contact">
+    <div className="contact-page">
+      <Helmet>
+        <title>A&A Powerwashing | Contact</title>
+        <meta name="description" content="Fill out this form and we will be in contact with you for a personalized quote. We offer free consultations and quotes." />
+        <meta name="keywords" content="contact, powerwashing, pressure washing, power washing, cleaning, roof cleaning, window cleaning, commercial powerwashing, trash can cleaning, bin cleaning, home services, A&A Powerwashing, a and a powerwashing, a and a pressure washing, aa powerwashing, aa powerwashers" />
+        <meta property="og:title" content="A&A Powerwashing" />
+        <meta property="og:description" content="Fill out this form and we will be in contact with you for a personalized quote. We offer free consultations and quotes." />
+        <meta property="og:image" content="./images/new_logo.PNG" />
+        <meta property="og:url" content="https://aapowerwashers.com" />
+      </Helmet>
 
-            <Helmet>
-                <title>A&A Powerwashing | Contact</title>
-                <meta name="description" content="Fill out this form and we will be in contact with you for a personalized quote.  We offer free consultations and quotes." />
-                <meta name="keywords" content="contact, powerwashing, pressure washing, power washing, cleaning, roof cleaning, window cleaning, commercial powerwashing, trash can cleaning, bin cleaning, home services, A&A Powerwashing, a and a powerwashing, a and a pressure washing, aa powerwashing, aa powerwashers" />
-                <meta property="og:title" content="A&A Powerwashing" />
-                <meta property="og:description" content="Fill out this form and we will be in contact with you for a personalized quote.  We offer free consultations and quotes." />
-                <meta property="og:image" content="./images/new_logo.PNG" />
-                <meta property="og:url" content="https://aapowerwashers.com" />
-                <link rel="stylesheet" href="./src/Contact.css" />
+      <div className="contact-hero-section">
+        <h1>Contact Us</h1>
+        <p>Please fill out the form below in full so that we can understand what kind of work needs to be done, where you are located, and how to contact you.</p>
+        <svg className="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100">
+          <path fill="#f8f9fa" fillOpacity="1" d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,48C672,43,768,53,864,58.7C960,64,1056,64,1152,58.7C1248,53,1344,43,1392,37.3L1440,32L1440,100L1392,100C1344,100,1248,100,1152,100C1056,100,960,100,864,100C768,100,672,100,576,100C480,100,384,100,288,100C192,100,96,100,48,100L0,100Z"></path>
+        </svg>
+      </div>
 
-            </Helmet>
+      <div className="contact">
+        <h2>Quote Request Form</h2>
+        
+        <form onSubmit={handleSubmit}>
+          <div className="form-field">
+            <input 
+              type="text" 
+              name="name" 
+              placeholder="Name" 
+              value={formData.name} 
+              onChange={handleChange} 
+              required 
+            />
+          </div>
+          
+          <div className="grouping">
+            <div className="form-field half">
+              <input 
+                type="email" 
+                name="email" 
+                placeholder="Email" 
+                value={formData.email} 
+                onChange={handleChange} 
+                required 
+              />
+            </div>
+            <div className="form-field half">
+              <input 
+                type="text" 
+                name="phone" 
+                placeholder="Phone Number" 
+                value={formData.phone} 
+                onChange={handleChange} 
+                required 
+              />
+            </div>
+          </div>
+          
+          <div className="form-field">
+            <input 
+              type="text" 
+              name="address" 
+              placeholder="Address" 
+              value={formData.address} 
+              onChange={handleChange} 
+              required 
+            />
+          </div>
+          
+          <div className="form-field">
+            <textarea 
+              name="message" 
+              placeholder="Want something else? Let us know! (optional)" 
+              value={formData.message} 
+              onChange={handleChange}
+            ></textarea>
+          </div>
 
-      <h2>Complete this form for a personalized quote</h2>
-      <form onSubmit={handleSubmit}>
-        <input 
-          type="text" 
-          name="name" 
-          placeholder="Name" 
-          value={formData.name} 
-          onChange={handleChange} 
-          required 
-        />
-        <div class='grouping'>
-          <input 
-            type="email" 
-            name="email" 
-            placeholder="Email" 
-            value={formData.email} 
-            onChange={handleChange} 
-            required 
-          />
-          <input 
-            type="text" 
-            name="phone" 
-            placeholder="Phone Number" 
-            value={formData.phone} 
-            onChange={handleChange} 
-            required 
-          />
-        </div>
-        <input 
-          type="text" 
-          name="address" 
-          placeholder="Address" 
-          value={formData.address} 
-          onChange={handleChange} 
-          required 
-        />
-        <textarea 
-          name="message" 
-          placeholder="Want something else?  Let us know! (optional)" 
-          value={formData.message} 
-          onChange={handleChange} 
-           
-        ></textarea>
+          <div className="select-service"> 
+            <h3>Select Desired Services</h3>
 
-        <div class='select-service'> 
-          <h3>Select Desired Services</h3>
-
-            <div class='box-group'>
-              <label>
+            <div className="services-grid">
+              <label className="service-checkbox">
                 <input 
                   type="checkbox" 
                   name="services" 
                   value="Power Washing" 
                   onChange={handleChange} 
-                /> Power Washing
+                />
+                <span className="checkbox-label">Power Washing</span>
               </label>
-              <label>
+              
+              <label className="service-checkbox">
                 <input 
                   type="checkbox" 
                   name="services" 
                   value="Roof Cleaning" 
                   onChange={handleChange} 
-                /> Roof Cleaning
+                />
+                <span className="checkbox-label">Roof Cleaning</span>
               </label>
-            </div>
-
-            <div class='box-group'>
-              <label>
+            
+              <label className="service-checkbox">
                 <input 
                   type="checkbox" 
                   name="services" 
                   value="Window Cleaning" 
                   onChange={handleChange} 
-                /> Window Cleaning
+                />
+                <span className="checkbox-label">Window Cleaning</span>
               </label>
-              <label>
+              
+              <label className="service-checkbox">
                 <input 
                   type="checkbox" 
                   name="services" 
                   value="House Wash" 
                   onChange={handleChange} 
-                /> House Wash
+                />
+                <span className="checkbox-label">House Wash</span>
               </label>
-            </div>
-
-            <div class='box-group'>
-              <label>
+              
+              <label className="service-checkbox">
                 <input 
                   type="checkbox" 
                   name="services" 
                   value="Gutter Cleaning" 
                   onChange={handleChange} 
-                /> Gutter Cleaning
+                />
+                <span className="checkbox-label">Gutter Cleaning</span>
               </label>
-              <label>
+              
+              <label className="service-checkbox">
                 <input 
                   type="checkbox" 
                   name="services" 
                   value="Trash Can Cleaning" 
                   onChange={handleChange} 
-                /> Trash Can Cleaning
+                />
+                <span className="checkbox-label">Trash Can Cleaning</span>
               </label>
             </div>
-        </div>
+          </div>
 
-        <button type="submit" disabled={loading}>
-          {loading ? 'Sending...' : 'Send Message'}
-        </button>
-        {status && <p className="status">{status}</p>}
-      </form>
+          <button type="submit" className="submit-btn" disabled={loading}>
+            {loading ? 'Sending...' : 'Send Message'}
+          </button>
+          
+          {status && <p className="status">{status}</p>}
+        </form>
+      </div>
     </div>
   );
 }
 
 export default Contact;
+
+
+// import React, { useState } from 'react';
+// import './Contact.css';
+// import { Helmet } from 'react-helmet';
+
+// function Contact() {
+//   const [formData, setFormData] = useState({
+//     name: '', email: '', message: '', services: [], address: '', phone: ''
+//   });
+//   const [status, setStatus] = useState('');
+//   const [loading, setLoading] = useState(false);
+
+//   const handleChange = (e) => {
+//     const { name, value, checked } = e.target;
+
+//     if (name === "services") {
+//       // Handle checkbox for services
+//       if (checked) {
+//         setFormData({ ...formData, services: [...formData.services, value] });
+//       } else {
+//         setFormData({ 
+//           ...formData, 
+//           services: formData.services.filter(service => service !== value) 
+//         });
+//       }
+//     } else {
+//       // Handle regular inputs
+//       setFormData({ ...formData, [name]: value });
+//     }
+//   };
+
+//   const handleSubmit = async (e) => {
+//     e.preventDefault();
+//     setLoading(true);
+
+//     try {
+//       const response = await fetch('https://lv6ez6mjbk.execute-api.us-east-2.amazonaws.com/prod/submitForm', {
+//         method: 'POST',
+//         headers: {
+//           'Content-Type': 'application/json',
+//         },
+//         body: JSON.stringify({
+//           body: JSON.stringify(formData)
+//         }),
+//       });
+
+//       if (response.ok) {
+//         setStatus('Your message has been sent successfully!');
+//         setFormData({ name: '', email: '', message: '', services: [], address: '', phone: '' });
+//       } else {
+//         const errorResult = await response.text();
+//         console.error('API error response:', errorResult);
+//         setStatus('Something went wrong. Please try again.');
+//       }
+//     } catch (error) {
+//       console.error('Error submitting the form:', error);
+//       setStatus('Something went wrong. Please try again.');
+//     } finally {
+//       setLoading(false);
+//     }
+//   };
+
+//   return (
+
+//     <div className="contact">
+
+//             <Helmet>
+//                 <title>A&A Powerwashing | Contact</title>
+//                 <meta name="description" content="Fill out this form and we will be in contact with you for a personalized quote.  We offer free consultations and quotes." />
+//                 <meta name="keywords" content="contact, powerwashing, pressure washing, power washing, cleaning, roof cleaning, window cleaning, commercial powerwashing, trash can cleaning, bin cleaning, home services, A&A Powerwashing, a and a powerwashing, a and a pressure washing, aa powerwashing, aa powerwashers" />
+//                 <meta property="og:title" content="A&A Powerwashing" />
+//                 <meta property="og:description" content="Fill out this form and we will be in contact with you for a personalized quote.  We offer free consultations and quotes." />
+//                 <meta property="og:image" content="./images/new_logo.PNG" />
+//                 <meta property="og:url" content="https://aapowerwashers.com" />
+//                 <link rel="stylesheet" href="./src/Contact.css" />
+
+//             </Helmet>
+
+            
+
+//       <h2>Complete this form for a personalized quote</h2>
+//       <form onSubmit={handleSubmit}>
+//         <input 
+//           type="text" 
+//           name="name" 
+//           placeholder="Name" 
+//           value={formData.name} 
+//           onChange={handleChange} 
+//           required 
+//         />
+//         <div class='grouping'>
+//           <input 
+//             type="email" 
+//             name="email" 
+//             placeholder="Email" 
+//             value={formData.email} 
+//             onChange={handleChange} 
+//             required 
+//           />
+//           <input 
+//             type="text" 
+//             name="phone" 
+//             placeholder="Phone Number" 
+//             value={formData.phone} 
+//             onChange={handleChange} 
+//             required 
+//           />
+//         </div>
+//         <input 
+//           type="text" 
+//           name="address" 
+//           placeholder="Address" 
+//           value={formData.address} 
+//           onChange={handleChange} 
+//           required 
+//         />
+//         <textarea 
+//           name="message" 
+//           placeholder="Want something else?  Let us know! (optional)" 
+//           value={formData.message} 
+//           onChange={handleChange} 
+           
+//         ></textarea>
+
+//         <div class='select-service'> 
+//           <h3>Select Desired Services</h3>
+
+//             <div class='box-group'>
+//               <label>
+//                 <input 
+//                   type="checkbox" 
+//                   name="services" 
+//                   value="Power Washing" 
+//                   onChange={handleChange} 
+//                 /> Power Washing
+//               </label>
+//               <label>
+//                 <input 
+//                   type="checkbox" 
+//                   name="services" 
+//                   value="Roof Cleaning" 
+//                   onChange={handleChange} 
+//                 /> Roof Cleaning
+//               </label>
+//             </div>
+
+//             <div class='box-group'>
+//               <label>
+//                 <input 
+//                   type="checkbox" 
+//                   name="services" 
+//                   value="Window Cleaning" 
+//                   onChange={handleChange} 
+//                 /> Window Cleaning
+//               </label>
+//               <label>
+//                 <input 
+//                   type="checkbox" 
+//                   name="services" 
+//                   value="House Wash" 
+//                   onChange={handleChange} 
+//                 /> House Wash
+//               </label>
+//             </div>
+
+//             <div class='box-group'>
+//               <label>
+//                 <input 
+//                   type="checkbox" 
+//                   name="services" 
+//                   value="Gutter Cleaning" 
+//                   onChange={handleChange} 
+//                 /> Gutter Cleaning
+//               </label>
+//               <label>
+//                 <input 
+//                   type="checkbox" 
+//                   name="services" 
+//                   value="Trash Can Cleaning" 
+//                   onChange={handleChange} 
+//                 /> Trash Can Cleaning
+//               </label>
+//             </div>
+//         </div>
+
+//         <button type="submit" disabled={loading}>
+//           {loading ? 'Sending...' : 'Send Message'}
+//         </button>
+//         {status && <p className="status">{status}</p>}
+//       </form>
+//     </div>
+//   );
+// }
+
+// export default Contact;
