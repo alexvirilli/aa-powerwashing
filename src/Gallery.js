@@ -62,7 +62,7 @@ const Gallery = () => {
       id: 6,
       image: wooden_fence,
       title: "Wooden Fence",
-      description: "Completely revitalized this haddonfield wooden fence",
+      description: "Completely revitalized this Haddonfield wooden fence",
       category: "residential"
     },
     {
