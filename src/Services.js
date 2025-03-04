@@ -74,7 +74,7 @@ const Services = () => {
   return (
     <div className="services-page">
       {/* Hero Section */}
-      <div className="gallery-hero-section">
+      <div className="services-hero-section">
         <Helmet>
           <title>A&A Powerwashing | Services</title>
           <meta name="description" content="A&A Powerwashing offers a variety of services, from paver cleaning to roof washing.  Take a look and explore our practices on this page." />
@@ -86,10 +86,10 @@ const Services = () => {
           <link rel="stylesheet" href="./src/Services.css" />
         </Helmet>
 
-        <div className="gallery-hero-image"></div>
+        <div className="services-hero-image"></div>
 
-        <div className="gallery-hero-content">
-          <div className="gallery-hero-text">
+        <div className="services-hero-content">
+          <div className="services-hero-text">
             <h1>Professional Powerwashing Services</h1>
             <p>Browse and learn more about our premium powerwashing solutions</p>
             <Link to="/contact" className="cta-button">Get a free quote</Link>
@@ -97,7 +97,7 @@ const Services = () => {
         </div>
       </div>
 
-      <svg className="gallery-hero-divider" viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg">
+      <svg className="services-hero-divider" viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg">
         <path d="M0,60 C360,120 1080,0 1440,60 L1440,100 L0,100 Z" fill="#1e3a8a"/>
       </svg>
 

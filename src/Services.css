@@ -7,48 +7,57 @@
 }
 
 /* Hero Section */
-.gallery-hero-section {
+.services-hero-section {
   position: relative;
-  height: 300px;
+  min-height: 300px;
+  padding: 5vh 0; /* Gives breathing room while allowing dynamic growth */
+  display: flex;
+  align-items: center; /* Ensures content stays centered */
+  justify-content: center;
+  background: linear-gradient(to top, #1e3a8a 0%, #3551a4 50%, #0045F3 100%);
+
 }
 
-.gallery-hero-image {
+.services-hero-image {
   height: 100%;
   width: 100%;
   background: linear-gradient(to top, #1e3a8a 0%, #3551a4 50%, #0045F3 100%);
 }
 
-.gallery-hero-content {
+.services-hero-content {
   position: absolute;
   inset: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 10;
 }
 
-.gallery-hero-text {
+.services-hero-text {
   text-align: center;
   color: white;
   padding: 0 1rem;
   max-width: 800px;
 }
 
-.gallery-hero-text h1 {
+.services-hero-text h1 {
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
 
-.gallery-hero-text p {
+.services-hero-text p {
   font-size: 1.25rem;
 }
 
-.gallery-hero-divider {
+.services-hero-divider {
   display: block;
   width: auto;
   height: auto;
   transform: rotate(180deg);
   margin-top: -1px;
+  z-index: 0;
+  position: relative;
 }
 
 /* Services Section Styles */
@@ -85,6 +94,7 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   height: 200px;
   width: 100%;
+  z-index: 10;
 }
 
 .page-service-button:hover {
