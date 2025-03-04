@@ -3,6 +3,7 @@ import './Home.css';
 import { Link } from 'react-router-dom';
 import { Check } from 'lucide-react';
 
+
 import ImageComparison from './ImageComparison';
 import { FaHome, FaLeaf, FaRoad, FaWarehouse, FaHandSparkles, FaTrash } from 'react-icons/fa';
 
@@ -184,10 +185,22 @@ function Home() {
             </section>
 
 
+            
+
             <section id="explainer" className="explainer">
+
+            <svg 
+        className="home-wave home-wave-top" 
+        xmlns="http://www.w3.org/2000/svg" 
+        viewBox="0 0 1440 120" 
+        preserveAspectRatio="none"
+      >
+        <path d="M0,0 C576,76.8 768,76.8 1440,0 L1440,120 L0,120 Z" fill="#0045F3"/>
+      </svg>
 
                 <div className='blurb-container'>
 
+               
                 <div class='choose-the-best'>
                     <h1>Providing Eco-Friendly Solutions to South Jersey Homes</h1>
                 </div>
@@ -196,10 +209,19 @@ function Home() {
                 </div>
 
                 </div>
-            
-               
+
+                <svg 
+        className="home-wave home-wave-bottom" 
+        xmlns="http://www.w3.org/2000/svg" 
+        viewBox="0 0 1440 120" 
+        preserveAspectRatio="none"
+      >
+        <path d="M0,120 C576,43.2 768,43.2 1440,120 L1440,0 L0,0 Z" fill="#0045F3"/>
+      </svg>
                 
             </section>
+
+           
 
 
             <section className="featured-work">

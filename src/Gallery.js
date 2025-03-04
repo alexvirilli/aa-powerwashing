@@ -133,10 +133,7 @@ const Gallery = () => {
       <div className="intro-section">
         <div className="intro-content">
           <h2>Transform Your Property With Professional Power Washing</h2>
-          <p>
-            Browse through our gallery of completed projects to see what we can do for your home or business. 
-            Every surface tells a story of renewal - from dingy and dirty to pristine and protected.
-          </p>
+          
         </div>
 
         {/* Filter Buttons */}
