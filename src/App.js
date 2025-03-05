@@ -124,9 +124,6 @@ function App() {
           <Route path="/WestDeptford" element={<WestDeptford />}></Route>
           <Route path="/Swedesboro" element={<Swedesboro />}></Route>
 
-
-
-
         </Routes>
         <Footer></Footer>
       </Suspense>
