@@ -6,7 +6,7 @@ const Footer = () => {
         <footer className="business-footer1">
             <div className="footer-section contact-info1">
                 <h4>Contact Us</h4>
-                <p>Text or Call Us: (856) 281-2658</p>
+                <p>Text or Call Us: (856) 617-3222</p>
                 <p><a href="mailto:aapowerwashers@gmail.com">aapowerwashers@gmail.com</a></p>
                 <p>Offices in Cherry Hill, NJ and Margate City, NJ</p>
             </div>

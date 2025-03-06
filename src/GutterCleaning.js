@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import './GutterCleaning.css';
+import './ServiceDetail.css';
+import Button from './Button';
 
 const GutterCleaning = () => {
   const videoRef = useRef(null);
@@ -85,7 +86,7 @@ const GutterCleaning = () => {
           <div className="detail-video-overlay">
             <h1>Gutter Cleaning Services</h1>
             <p>Protect your roof by stopping gutter blockages</p>
-            <Link to="/contact" className="contact-button">Get a free quote</Link>
+            <Button to="/contact" size="medium">Get a quote</Button>
 
           </div>
           <button className="detail-play-pause-btn" onClick={togglePlayPause}>
@@ -160,7 +161,7 @@ const GutterCleaning = () => {
               </div>
 
               <div className='quick-quote'> 
-              <Link to="/contact" className="contact-button">Get a free quote</Link>
+              <Button to="/contact" size="large" margin="0 0 2rem">Get a free quote</Button>
 
                 </div>
 
@@ -222,8 +223,10 @@ const GutterCleaning = () => {
               
               <div className="pricing-notes">
                 <p><strong>Note:</strong> Final pricing depends on factors including condition, accessibility, and specific cleaning requirements. Contact us for a free, personalized quote.</p>
-                <div className="quote-cta">
-                  <a href="/contact" className="quote-button">Request a Free Quote</a>
+                <div className='quick-quote'>
+                  <Button to="/contact" size="large">Get a free quote</Button>
+
+                  {/* <Link to="/contact" className="contact-button">Get a free quote</Link> */}
                 </div>
               </div>
             </div>

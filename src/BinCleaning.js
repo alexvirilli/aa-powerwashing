@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import './BinCleaning.css';
+import './ServiceDetail.css';
+import Button from './Button';
 
 const BinCleaning = () => {
   const videoRef = useRef(null);
@@ -85,7 +86,7 @@ const BinCleaning = () => {
           <div className="detail-video-overlay">
             <h1>Professional Bin Cleaning</h1>
             <p>Eliminate odors and bacteria with our specialized sanitizing service</p>
-            <Link to="/contact" className="contact-button">Get a free quote</Link>
+            <Button to="/contact" size="medium">Get a quote</Button>
 
           </div>
           <button className="detail-play-pause-btn" onClick={togglePlayPause}>
@@ -195,7 +196,7 @@ const BinCleaning = () => {
               </div>
 
               <div className='quick-quote'>
-              <Link to="/contact" className="contact-button">Get a free quote</Link>
+              <Button to="/contact" size="large" margin="2rem 0 0">Get a free quote</Button>
 
                 </div>
             </div>
@@ -326,8 +327,10 @@ const BinCleaning = () => {
               
               <div className="pricing-notes">
                 <p><strong>Note:</strong> One-time cleaning services are also available. Additional bins beyond three are charged at $10 per bin. Special pricing available for commercial bin cleaning - please contact us for a custom quote.</p>
-                <div className="quote-cta">
-                  <a href="/contact" className="quote-button">Schedule Your Service</a>
+                <div className='quick-quote'>
+                  <Button to="/contact" size="large">Get a free quote</Button>
+
+                  {/* <Link to="/contact" className="contact-button">Get a free quote</Link> */}
                 </div>
               </div>
             </div>

@@ -6,6 +6,7 @@ body, html {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;;
     scroll-behavior: smooth;
     background: #f9f9f9;
+    height: auto;
 }
 
 .hero-curve {
@@ -34,12 +35,37 @@ body, html {
     transition: background-image 10ms ease-in-out;
 }
 
+
 .contact-button1 {
+  z-index: 99;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #46B8FF;
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: auto;
+  animation: fadeIn 2s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  letter-spacing: 0.5px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* .contact-button1 {
     z-index: 99;
     display: inline-block;
     margin-top: 20px; 
-    padding: 10px 20px;
-    background-color: #cf4d41; 
+    padding: 10px 20px; */
+    /* background-color: #cf4d41;  */
+    /* background-color: #46B8FF;
     color: white; 
     font-size: 22px;
     text-decoration: none; 
@@ -50,11 +76,14 @@ body, html {
     width: auto;
     animation: fadeIn 2s ease-in-out;
 
-}
+} */
 
 .contact-button1:hover {
-    background-color: #852017; 
-}
+    /* background-color: #852017;  */
+    background-color: #002B5C;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
 
 .landing-contact {
     display: flex;
@@ -157,6 +186,7 @@ body, html {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
   }
   
@@ -186,18 +216,26 @@ body, html {
   }
   
   .service-button-home {
-    background-color: #cf4d41;
+    background-color: #46B8FF;
     color: white;
     padding: 10px 20px;
-    border-radius: 4px;
+    border-radius: 6px;
     text-decoration: none;
     font-weight: 500;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
     margin-top: auto;
+    display: inline-block;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
   }
   
   .service-button-home:hover {
-    background-color: #b33f34;
+    background-color: #002B5C;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12);
   }
   
   /* Tablet Responsiveness */
@@ -447,7 +485,7 @@ body, html {
   
   .contact-button-before-after {
     display: inline-block;
-    background-color: #cd4d44;
+    background-color: #46B8FF;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -459,7 +497,7 @@ body, html {
   }
   
   .contact-button-before-after:hover {
-    background-color: #b23c33;
+    background-color: #002B5C;
   }
   
   /* Improved responsiveness with multiple breakpoints */
@@ -983,6 +1021,47 @@ body, html {
     .town-item:hover .check-icon {
       transform: scale(1.2);
     }
+  }
+
+  /* CTA Section */
+  .bottom-cta-section {
+    background-color: #46B8FF;
+    padding: 3rem 1rem;
+  }
+  
+  .bottom-cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .bottom-cta-content h2 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .bottom-cta-content p {
+    color: white;
+    margin-bottom: 2rem;
+    font-size: 1.125rem;
+  }
+  
+  .bottom-cta-button {
+    background-color: white;
+    color: #1d4ed8;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .bottom-cta-button:hover {
+    background-color: #f0f9ff;
   }
 
   /* Line divider */

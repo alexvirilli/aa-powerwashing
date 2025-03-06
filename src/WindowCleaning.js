@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import './WindowCleaning.css';
+import Button from './Button';
+import './ServiceDetail.css';
 
 const WindowCleaning = () => {
   const videoRef = useRef(null);
@@ -85,7 +86,7 @@ const WindowCleaning = () => {
           <div className="detail-video-overlay">
             <h1>Professional Window Cleaning</h1>
             <p>Crystal clear views and enhanced curb appeal for your home</p>
-                <Link to="/contact" className="contact-button">Get a free quote</Link>
+            <Button to="/contact" size="medium">Get a quote</Button>
           </div>
           <button className="detail-play-pause-btn" onClick={togglePlayPause}>
             <i className={`fas ${isPlaying ? 'fa-pause' : 'fa-play'}`}></i>
@@ -159,7 +160,7 @@ const WindowCleaning = () => {
               </div>
 
                 <div className='quick-quote'> 
-                <Link to="/contact" className="contact-button">Get a free quote</Link>
+                <Button to="/contact" size="large">Get a free quote</Button>
                 </div>
 
               <div className="service-process">
@@ -282,8 +283,10 @@ const WindowCleaning = () => {
               
               <div className="pricing-notes">
                 <p><strong>Note:</strong> Final pricing depends on factors including window size, accessibility, condition, and any additional services required. Contact us for a free, personalized quote.</p>
-                <div className="quote-cta">
-                  <a href="/contact" className="quote-button">Request a Free Quote</a>
+                <div className='quick-quote'>
+                  <Button to="/contact" size="large">Get a free quote</Button>
+
+                  {/* <Link to="/contact" className="contact-button">Get a free quote</Link> */}
                 </div>
               </div>
             </div>

@@ -1,3 +1,11 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;;
+  scroll-behavior: smooth;
+  height: auto;
+}
+
 /* Main Container */
 .gallery-container {
     font-family: 'Arial', sans-serif;
@@ -355,6 +363,7 @@
     max-width: 800px;
     margin: 5vh auto;
   }
+
   
   .testimonial-header {
     display: flex;
@@ -394,31 +403,31 @@
   }
   
   /* CTA Section */
-  .cta-section {
+  .bottom-cta-section {
     background-color: #46B8FF;
     padding: 3rem 1rem;
   }
   
-  .cta-content {
+  .bottom-cta-content {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
   }
   
-  .cta-content h2 {
+  .bottom-cta-content h2 {
     font-size: 1.75rem;
     font-weight: bold;
     color: white;
     margin-bottom: 1rem;
   }
   
-  .cta-content p {
+  .bottom-cta-content p {
     color: white;
     margin-bottom: 2rem;
     font-size: 1.125rem;
   }
   
-  .cta-button {
+  .bottom-cta-button {
     background-color: white;
     color: #1d4ed8;
     padding: 0.75rem 1.5rem;
@@ -430,7 +439,7 @@
     transition: background-color 0.3s ease;
   }
   
-  .cta-button:hover {
+  .bottom-cta-button:hover {
     background-color: #f0f9ff;
   }
   

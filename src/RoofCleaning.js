@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import './RoofCleaning.css';
+import Button from './Button';
+import './ServiceDetail.css';
 
 const RoofCleaning = () => {
   const videoRef = useRef(null);
@@ -85,7 +86,7 @@ const RoofCleaning = () => {
           <div className="detail-video-overlay">
             <h1>Professional Roof Cleaning</h1>
             <p>Extend the life of your roof and enhance your home's curb appeal</p>
-            <Link to="/contact" className="contact-button">Get a free quote</Link>
+            <Button to="/contact" size="medium">Get a quote</Button>
           </div>
           <button className="detail-play-pause-btn" onClick={togglePlayPause}>
             <i className={`fas ${isPlaying ? 'fa-pause' : 'fa-play'}`}></i>
@@ -196,7 +197,7 @@ const RoofCleaning = () => {
               </div>
 
               <div className='quick-quote'>
-              <Link to="/contact" className="contact-button">Get a free quote</Link>
+              <Button to="/contact" size="large" margin="2rem 0 0">Get a free quote</Button>
 
                 </div>
             </div>
@@ -282,8 +283,10 @@ const RoofCleaning = () => {
               
               <div className="pricing-notes">
                 <p><strong>Note:</strong> Final pricing depends on factors including roof pitch, accessibility, material type, and the extent of biological growth. Contact us for a free, personalized quote.</p>
-                <div className="quote-cta">
-                  <a href="/contact" className="quote-button">Request a Free Quote</a>
+                <div className='quick-quote'>
+                  <Button to="/contact" size="large">Get a free quote</Button>
+
+                  {/* <Link to="/contact" className="contact-button">Get a free quote</Link> */}
                 </div>
               </div>
             </div>

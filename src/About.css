@@ -1,0 +1,331 @@
+/* -----------------------------
+   CSS Variables for Branding
+----------------------------- */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+  }
+:root {
+    --brand-blue-dark: #1e3a8a;
+    --brand-blue-mid: #3551a4;
+    --brand-blue-light: #0045f3;
+    --brand-text-dark: #333;
+    --brand-text-light: #ffffff;
+    --bg-light: #f9f9f9;
+    --bg-lighter: #f4f4f4;
+    --bg-accent: #e9ecef;
+    --spacing-section: 3rem;
+    --spacing-inner: 2rem;
+    --font-family-base: 'Arial', sans-serif;
+  }
+  
+  /* Global Styles */
+  html {
+    box-sizing: border-box;
+    font-size: 16px;
+    scroll-behavior: smooth;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family-base);
+    color: var(--brand-text-dark);
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* -----------------------------
+     Page Container
+  ----------------------------- */
+  .about-page-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  /* -----------------------------
+     Hero Section
+  ----------------------------- */
+  .about-hero {
+    position: relative;
+    width: 100%;
+  }
+  
+  .about-hero-gradient {
+    background: linear-gradient(
+      to top,
+      var(--brand-blue-dark) 0%,
+      var(--brand-blue-mid) 50%,
+      var(--brand-blue-light) 100%
+    );
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .about-hero-svg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 8rem;
+  }
+  
+  .about-hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: var(--brand-text-light);
+    padding: 2rem var(--spacing-inner) 6rem;
+    max-width: 60rem;
+    margin: 0 auto;
+  }
+  
+  .about-hero-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+  
+  .about-hero-subtitle {
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+  
+  /* -----------------------------
+     Mission Section
+  ----------------------------- */
+  .about-mission {
+    margin-bottom: var(--spacing-section);
+    padding: 0 var(--spacing-inner);
+    max-width: 60rem;
+    margin: 0 auto var(--spacing-section);
+  }
+  
+  .about-mission-title {
+    border-bottom: 2px solid var(--brand-blue-light);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
+  }
+  
+  /* -----------------------------
+     Owners Section
+  ----------------------------- */
+  .about-owners {
+    margin-bottom: var(--spacing-section);
+    padding: 0 var(--spacing-inner);
+    max-width: 60rem;
+    margin: 0 auto var(--spacing-section);
+  }
+  
+  .about-owners-title {
+    border-bottom: 2px solid var(--brand-blue-light);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
+  }
+  
+  .about-owners-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+  }
+  
+  .about-owner-card {
+    flex: 1;
+    min-width: 280px;
+    text-align: center;
+    background-color: var(--bg-light);
+    padding: 1.5rem;
+    border-radius: 0.625rem; /* 10px */
+    box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-owner-image-container {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    overflow: hidden;
+
+  }
+  
+  .about-owner-name {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .about-owner-bio {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  /* -----------------------------
+     Values Section
+  ----------------------------- */
+  .about-values {
+    margin-bottom: var(--spacing-section);
+    padding: 0 var(--spacing-inner);
+    max-width: 60rem;
+    margin: 0 auto var(--spacing-section);
+  }
+  
+  .about-values-title {
+    border-bottom: 2px solid var(--brand-blue-light);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
+  }
+  
+  .about-values-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .about-value-item {
+    background-color: var(--bg-lighter);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    background-color: white;
+  }
+  
+  /* -----------------------------
+     Certifications Section
+  ----------------------------- */
+  .about-certifications {
+    margin-bottom: var(--spacing-section);
+    padding: 0 var(--spacing-inner);
+    max-width: 60rem;
+    margin: 0 auto var(--spacing-section);
+  }
+  
+  .about-certifications-title {
+    border-bottom: 2px solid var(--brand-blue-light);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
+  }
+  
+  .about-certifications-list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0;
+    justify-content: center;
+    margin: 0;
+  }
+  
+  .about-certifications-list li {
+    background-color: var(--bg-accent);
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.3125rem; /* 5px */
+    background-color: white;
+  }
+  
+  /* -----------------------------
+     CTA Section
+  ----------------------------- */
+  .about-cta {
+    margin-bottom: var(--spacing-section);
+    padding: 0 var(--spacing-inner) 3rem;
+    text-align: center;
+    max-width: 60rem;
+    margin: 0 auto var(--spacing-section);
+  }
+  
+  .about-cta-title {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about-cta-text {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+  }
+  
+  .about-cta-button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--brand-blue-dark);
+    color: var(--brand-text-light);
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.3125rem;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .about-cta-button:hover,
+  .about-cta-button:focus {
+    background-color: var(--brand-blue-mid);
+    outline: none;
+  }
+  
+  /* -----------------------------
+     Media Queries
+  ----------------------------- */
+  @media (max-width: 1200px) {
+    .about-owners-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .about-hero-content {
+      padding: 2rem var(--spacing-inner) 4rem;
+    }
+  
+    .about-hero-title {
+      font-size: 2rem;
+    }
+  
+    .about-hero-subtitle {
+      font-size: 1rem;
+    }
+  
+    .about-values-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .about-owner-image-container {
+      width: 200px;
+      height: 200px;
+    }
+  
+    .about-certifications-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about-hero-title {
+      font-size: 1.75rem;
+    }
+  
+    .about-hero-subtitle {
+      font-size: 0.95rem;
+    }
+  
+    .about-owner-image-container {
+      width: 150px;
+      height: 150px;
+    }
+  }
+  

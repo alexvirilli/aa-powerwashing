@@ -1,35 +1,63 @@
 .business-footer1 {
-    background-color: #0b4d8c;
-    color: #fff;
-    text-align: center;
+    background-color: #002B5C; /* Dark background color */
+    color: #f9f9f9; /* Light text color */
+    padding: 20px;
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: auto;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Ensure it adapts to smaller screens */
+    text-align: center;
 }
 
 .footer-section {
+    flex: 1; /* Each section takes equal space */
     margin: 10px;
 }
 
 .footer-section h4 {
+    font-size: 1.2rem;
     margin-bottom: 10px;
+    color: #6699ff; /* Highlight section headers */
 }
 
+.footer-section p,
 .footer-section a {
-    display: block;
-    color: #fff;
-    text-decoration: none;
+    font-size: 0.9rem;
     margin: 5px 0;
+    color: #f9f9f9;
+    text-decoration: none;
 }
 
 .footer-section a:hover {
-    text-decoration: underline;
+    color: #6699ff; /* Highlight links on hover */
+}
+
+.social-links1 {
+    display: flex; /* Align links in a row */
+    flex-direction: column; /* Stack links vertically */
+    align-items: center; /* Align links to the left */
+}
+
+.social-links1 h4 {
+    font-size: 1.2rem; /* Slightly larger header font */
+    color: #6699ff; /* Highlight the header (adjust to match your design) */
+    margin-bottom: 10px; /* Space between the header and links */
+}
+
+.social-links1 a {
+    font-size: 1rem; /* Standard link font size */
+    color: #f9f9f9; /* Light text color for links */
+    text-decoration: none; /* Remove underline */
+    margin: 5px 0; /* Space between links */
+    transition: color 0.3s ease-in-out; /* Smooth color transition on hover */
+}
+
+.social-links1 a:hover {
+    color: #6699ff; /* Highlight the link on hover (adjust to your brand color) */
 }
 
 @media (max-width: 768px) {
-    .business-footer1 {
-        flex-direction: column;
-        text-align: center;
+    .footer-section {
+        flex: 100%; /* Stack sections vertically on smaller screens */
+        margin-bottom: 20px;
     }
 }

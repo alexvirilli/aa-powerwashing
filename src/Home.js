@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import './Home.css';
 import { Link } from 'react-router-dom';
 import { Check } from 'lucide-react';
-
+import Button from './Button'
 
 import ImageComparison from './ImageComparison';
 import { FaHome, FaLeaf, FaRoad, FaWarehouse, FaHandSparkles, FaTrash } from 'react-icons/fa';
@@ -51,21 +51,21 @@ function Home() {
           id: 1,
           icon: <FaHome size={32} />,
           title: 'House Washing',
-          description: 'Gently removes dirt, mold, and grime to restore your homes beauty.',
+          description: 'We use a special soft washing process to gently remove dirt, mold, and grime and restore your homes beauty.',
           link: '/services/Housewashing'
         },
         {
           id: 2,
           icon: <FaWarehouse size={32} />,
           title: 'Roof Cleaning',
-          description: 'Eliminates black streaks and extends the life of your roof.',
+          description: 'Our soft washing and shampooing process is applied to your roof to remove black streaks and extends the life of your roof.',
           link: '/services/RoofCleaning'
         },
         {
           id: 3,
           icon: <FaRoad size={32} />,
           title: 'Surface Cleaning & Powerwashing',
-          description: 'Revitalizes walkways, patios, and driveways to look like new.',
+          description: 'We carefully select the correct amount of pressure to revitalize walkways, patios, and driveways while avoiding long term damage.',
           link: '/services/Powerwashing'
         },
         {
@@ -79,14 +79,14 @@ function Home() {
           id: 5,
           icon: <FaHandSparkles size={32} />,
           title: 'Window Cleaning',
-          description: 'Preserves wood surfaces and restores natural beauty.',
+          description: 'We use a water fed pole to reach and scrub down all your windows and leave them sparkling',
           link: '/services/WindowCleaning'
         },
         {
           id: 6,
           icon: <FaTrash size={32} />,
           title: 'Trash Can Cleaning',
-          description: 'Professional cleaning solutions for businesses and properties.',
+          description: 'Our proprietary blend of chemicals will leave your trash cans looking brand new.  We offer plans so you don\'t have to worry about smelly trash cans again.',
           link: '/services/BinCleaning'
         }
       ];
@@ -153,7 +153,9 @@ function Home() {
 
                 <div className="landing-contact">
                     <h1>South Jersey's Premier Pressure Washing Service</h1>
-                    <Link to="/contact" className="contact-button1">Get a free quote</Link>
+                    {/* <Link to="/contact" className="contact-button1">Get a free quote</Link> */}
+                    <Button to="/contact" size="large" padding="1rem 2rem" margin="20px">Get A Free Quote</Button>
+                    
                 </div>
 
                 <svg className="hero-curve" viewBox="0 0 1440 320">
@@ -175,9 +177,10 @@ function Home() {
                         <div className="service-icon-home">{service.icon}</div>
                         <h3 className="service-title-home">{service.title}</h3>
                         <p className="service-description-home">{service.description}</p>
-                        <a href={service.link} className="service-button-home">
+                        <Button to={service.link} size="medium" margin="auto 0 0 0">Get Started</Button>
+                        {/* <a href={service.link} className="service-button-home">
                             Get Started
-                        </a>
+                        </a>  */}
                         </div>
                     ))}
                     </div>
@@ -242,8 +245,7 @@ function Home() {
                         See how our power washing services removed years of dirt and grime,
                         making these pavers look brand new.
                         </p>
-                        <Link to="/services/Powerwashing" className="contact-button-before-after">Powerwashing</Link>
-
+                        <Button to="/services/Powerwashing" size="large">Powerwashing</Button>
                     </div>
                 </div>
                 <div className="image-and-review">
@@ -256,7 +258,7 @@ function Home() {
                         Our pressure washing restored the beauty of this pool deck, removing
                         stains and buildup with ease.
                         </p>
-                        <Link to="/services/Powerwashing" className="contact-button-before-after">Learn more</Link>
+                        <Button to="/services/Powerwashing" size="large">Learn More</Button>
 
                     </div>
                 </div>
@@ -270,7 +272,7 @@ function Home() {
                         Check out how we transformed this wall, giving it a fresh, clean
                         appearance after years of neglect.
                         </p>
-                        <Link to="/services/HouseWashing" className="contact-button-before-after">Soft Washing</Link>
+                        <Button to="/services/HouseWashing" size="large">Soft Washing</Button>
 
                     </div>
                 </div>
@@ -283,7 +285,7 @@ function Home() {
                         <p>
                         Our team erased the black streaks on this roof, returning it to its former glory.
                         </p>
-                        <Link to="/services/RoofCleaning" className="contact-button-before-after">Roof Cleaning</Link>
+                        <Button to="/services/RoofCleaning" size="large">Roof Cleaning</Button>
 
                     </div>
                 </div>
@@ -351,7 +353,21 @@ function Home() {
                 </div>
             </section>
 
+            <div className="bottom-cta-section">
+              <div className="bottom-cta-content">
+                <h2>Ready to Transform Your Property?</h2>
+                <p>
+                  Contact us today for a free estimate on your pressure washing project.
+                </p>
+
+                <Link to="/contact" className="bottom-cta-button">Get a free quote</Link>
+                
+              </div>
+            </div>
+
         </div>
+
+        
         
     );
 

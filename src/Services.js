@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './Services.css';
 import { useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
+import Button from './Button';
 
 const Services = () => {
   const navigate = useNavigate();
@@ -92,6 +93,8 @@ const Services = () => {
           <div className="services-hero-text">
             <h1>Professional Powerwashing Services</h1>
             <p>Browse and learn more about our premium powerwashing solutions</p>
+            {/* <Button to="/contact" size="medium">Get a quote</Button> */}
+
             <Link to="/contact" className="cta-button">Get a free quote</Link>
           </div>
         </div>
@@ -123,6 +126,19 @@ const Services = () => {
           ))}
         </div> 
       </section>
+
+      <div className="bottom-cta-section">
+              <div className="bottom-cta-content">
+                <h2>Ready to Transform Your Property?</h2>
+                <p>
+                  Contact us today for a free estimate on your pressure washing project.
+                </p>
+
+                <Link to="/contact" className="bottom-cta-button">Get a free quote</Link>
+                
+              </div>
+            </div>
+      
     </div>
   );
 };

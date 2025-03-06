@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import './HouseWashing.css';
+import Button from './Button';
+import './ServiceDetail.css';
 
 const HouseWashing = () => {
   const videoRef = useRef(null);
@@ -87,7 +88,7 @@ const HouseWashing = () => {
           <div className="detail-video-overlay">
             <h1>House Washing</h1>
             <p>Restore your home's exterior beauty with our professional cleaning services</p>
-            <Link to="/contact" className="contact-button">Get a free quote</Link>
+            <Button to="/contact" size="medium">Get a quote</Button>
           </div>
           <button className="detail-play-pause-btn" onClick={togglePlayPause}>
             <i className={`fas ${isPlaying ? 'fa-pause' : 'fa-play'}`}></i>
@@ -210,7 +211,7 @@ const HouseWashing = () => {
                   </div>
                 </div>
                 <div className='quick-quote'>
-                    <Link to="/contact" className="contact-button">Get a free quote</Link>
+                <Button to="/contact" size="large" margin="4rem 0 0">Get a free quote</Button>
 
                 </div>
 
@@ -316,8 +317,10 @@ const HouseWashing = () => {
               
               <div className="pricing-notes">
                 <p><strong>Note:</strong> Pricing may vary based on factors including accessibility, level of soiling, specific stain types, and any extraordinary conditions. All services include pre-treatment protection, professional cleaning, and a final rinse. We provide free on-site assessments and detailed quotations.</p>
-                <div className="quote-cta">
-                  <a href="/contact" className="quote-button">Request Free Estimate</a>
+                <div className='quick-quote'>
+                  <Button to="/contact" size="large">Get a free quote</Button>
+
+                  {/* <Link to="/contact" className="contact-button">Get a free quote</Link> */}
                 </div>
               </div>
             </div>

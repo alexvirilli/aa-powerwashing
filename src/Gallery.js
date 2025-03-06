@@ -288,14 +288,14 @@ const Gallery = () => {
       </div>
 
       {/* Call to Action */}
-      <div className="cta-section">
-        <div className="cta-content">
+      <div className="bottom-cta-section">
+        <div className="bottom-cta-content">
           <h2>Ready to Transform Your Property?</h2>
           <p>
             Contact us today for a free estimate on your pressure washing project.
           </p>
 
-          <Link to="/contact" className="cta-button">Get a free quote</Link>
+          <Link to="/contact" className="bottom-cta-button">Get a free quote</Link>
           
         </div>
       </div>

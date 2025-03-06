@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import './CommercialPowerwashing.css';
+import './ServiceDetail.css';
+import Button from './Button';
 
 const CommercialPowerwashing = () => {
   const videoRef = useRef(null);
@@ -87,7 +88,7 @@ const CommercialPowerwashing = () => {
           <div className="detail-video-overlay">
             <h1>Commercial Powerwashing</h1>
             <p>Professional exterior cleaning solutions for businesses of all sizes</p>
-            <Link to="/contact" className="contact-button">Get a free quote</Link>
+            <Button to="/contact" size="medium">Get a quote</Button>
 
           </div>
           <button className="detail-play-pause-btn" onClick={togglePlayPause}>
@@ -213,7 +214,7 @@ const CommercialPowerwashing = () => {
               </div>
 
               <div className='quick-quote'>
-              <Link to="/contact" className="contact-button">Get a free quote</Link>
+              <Button to="/contact" size="large" margin="4rem 0 0">Get a free quote</Button>
 
                  </div>
 
@@ -362,8 +363,10 @@ const CommercialPowerwashing = () => {
               
               <div className="pricing-notes">
                 <p><strong>Note:</strong> Pricing varies based on factors including surface condition, accessibility, job complexity, and specific cleaning requirements. We offer free on-site assessments and detailed quotations for all commercial properties.</p>
-                <div className="quote-cta">
-                  <a href="/contact" className="quote-button">Request Commercial Quote</a>
+                <div className='quick-quote'>
+                  <Button to="/contact" size="large">Get a free quote</Button>
+
+                  {/* <Link to="/contact" className="contact-button">Get a free quote</Link> */}
                 </div>
               </div>
             </div>
