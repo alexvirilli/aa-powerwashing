@@ -131,9 +131,11 @@ function Lumberton() {
                                 <div className="town-service-icon">{service.icon}</div>
                                 <h3 className="town-service-title">{service.title}</h3>
                                 <p className="town-service-description">{service.description}</p>
-                                <Link to={service.link} className="town-service-button">
+                                <Button to={service.link} size="small" margin="auto">Get Started</Button>
+
+                                {/* <Link to={service.link} className="town-service-button">
                                     Get Started
-                                </Link>
+                                </Link> */}
                             </div>
                         ))}
                     </div>
@@ -173,7 +175,7 @@ function Lumberton() {
                         <div className="town-comparison-text">
                             <h3>Paver Restoration</h3>
                             <p>Accumulated grime on these Lumberton pavers was no match for our specialized cleaning process.</p>
-                            <Link to="/services/Powerwashing" className="town-service-link">Learn about our paver cleaning</Link>
+                            <Button to="/services/Powerwashing" size="medium" >Learn about paver cleaning</Button>
                         </div>
                     </div>
                     <div className="town-comparison-item">
@@ -183,7 +185,7 @@ function Lumberton() {
                         <div className="town-comparison-text">
                             <h3>Deck Cleaning</h3>
                             <p>This Lumberton deck was restored to its original beauty, removing years of wear and weathering.</p>
-                            <Link to="/services/Powerwashing" className="town-service-link">Explore deck cleaning</Link>
+                            <Button to="/services/Powerwashing" size="medium" >Explore deck cleaning</Button>
                         </div>
                     </div>
                     <div className="town-comparison-item">
@@ -193,7 +195,7 @@ function Lumberton() {
                         <div className="town-comparison-text">
                             <h3>Home Exterior Cleaning</h3>
                             <p>Our soft washing technique safely removed buildup and mold from this Lumberton residence.</p>
-                            <Link to="/services/HouseWashing" className="town-service-link">View our home washing services</Link>
+                            <Button to="/services/HouseWashing" size="medium" >View our house washing services</Button>
                         </div>
                     </div>
                     <div className="town-comparison-item">
@@ -203,7 +205,7 @@ function Lumberton() {
                         <div className="town-comparison-text">
                             <h3>Roof Cleaning</h3>
                             <p>Algae and dark streaks were effectively removed from this Lumberton home's roof, extending its lifespan.</p>
-                            <Link to="/services/RoofCleaning" className="town-service-link">Discover roof cleaning options</Link>
+                            <Button to="/services/RoofCleaning" size="medium" >Discover roof cleaning options</Button>
                         </div>
                     </div>
                 </div>

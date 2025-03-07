@@ -245,7 +245,7 @@ function Home() {
                         See how our power washing services removed years of dirt and grime,
                         making these pavers look brand new.
                         </p>
-                        <Button to="/services/Powerwashing" size="large">Powerwashing</Button>
+                        <Button to="/services/Powerwashing" size="medium">Powerwashing</Button>
                     </div>
                 </div>
                 <div className="image-and-review">
@@ -258,7 +258,7 @@ function Home() {
                         Our pressure washing restored the beauty of this pool deck, removing
                         stains and buildup with ease.
                         </p>
-                        <Button to="/services/Powerwashing" size="large">Learn More</Button>
+                        <Button to="/services/Powerwashing" size="medium">Learn More</Button>
 
                     </div>
                 </div>
@@ -272,7 +272,7 @@ function Home() {
                         Check out how we transformed this wall, giving it a fresh, clean
                         appearance after years of neglect.
                         </p>
-                        <Button to="/services/HouseWashing" size="large">Soft Washing</Button>
+                        <Button to="/services/HouseWashing" size="medium">Soft Washing</Button>
 
                     </div>
                 </div>
@@ -285,7 +285,7 @@ function Home() {
                         <p>
                         Our team erased the black streaks on this roof, returning it to its former glory.
                         </p>
-                        <Button to="/services/RoofCleaning" size="large">Roof Cleaning</Button>
+                        <Button to="/services/RoofCleaning" size="medium">Roof Cleaning</Button>
 
                     </div>
                 </div>

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import ImageComparison from './ImageComparison';
 import './town-specific-landing-page.css';
 import { FaHome, FaLeaf, FaRoad, FaWarehouse, FaHandSparkles, FaTrash, FaMapMarkerAlt, FaAward, FaClock } from 'react-icons/fa';
-
+import Button from './Button';
 /* Images */
 // You can replace these with Avalon-specific images
 import margateHero from './images/home-hero.webp'; // Replace with Avalon beach/town image
@@ -98,7 +98,7 @@ function Avalon() {
                 <div className="town-hero-content">
                     <h1>Avalon's Trusted Power Washing Service</h1>
                     <p>Specialized cleaning solutions for local properties</p>
-                    <Link to="/contact" className="town-cta-button">Get a Free Quote</Link>
+                    <Button to="/contact" size="medium" padding="1rem 2rem" margin="auto">Get A Free Quote</Button>
                 </div>
             </section>
 
@@ -130,9 +130,11 @@ function Avalon() {
                                 <div className="town-service-icon">{service.icon}</div>
                                 <h3 className="town-service-title">{service.title}</h3>
                                 <p className="town-service-description">{service.description}</p>
-                                <Link to={service.link} className="town-service-button">
+                                <Button to={service.link} size="small" margin="auto">Get Started</Button>
+
+                                {/* <Link to={service.link} className="town-service-button">
                                     Get Started
-                                </Link>
+                                </Link> */}
                             </div>
                         ))}
                     </div>
@@ -152,7 +154,7 @@ function Avalon() {
                         <div className="town-comparison-text">
                             <h3>Paver Restoration</h3>
                             <p>Accumulated grime on these Avalon pavers was no match for our specialized cleaning process.</p>
-                            <Link to="/services/Powerwashing" className="town-service-link">Learn about our paver cleaning</Link>
+                            <Button to="/services/Powerwashing" size="medium" >Learn about paver cleaning</Button>
                         </div>
                     </div>
                 </div>
@@ -162,7 +164,7 @@ function Avalon() {
                 <div className="town-cta-container">
                     <h2>Ready to Restore Your Avalon Property?</h2>
                     <p>Our team is ready to help you protect your investment with our specialized cleaning services.</p>
-                    <Link to="/contact" className="town-cta-button">Get Your Free Quote Today</Link>
+                    <Button to="/contact" size="medium" margin="auto">Get A Free Quote</Button>
                 </div>
             </section>
         </div>

@@ -131,9 +131,11 @@ function SeaIsleCity() {
                                 <div className="town-service-icon">{service.icon}</div>
                                 <h3 className="town-service-title">{service.title}</h3>
                                 <p className="town-service-description">{service.description}</p>
-                                <Link to={service.link} className="town-service-button">
+                                <Button to={service.link} size="small" margin="auto">Get Started</Button>
+
+                                {/* <Link to={service.link} className="town-service-button">
                                     Get Started
-                                </Link>
+                                </Link> */}
                             </div>
                         ))}
                     </div>
@@ -153,7 +155,7 @@ function SeaIsleCity() {
                         <div className="town-comparison-text">
                             <h3>Paver Restoration</h3>
                             <p>Accumulated grime on these Sea Isle City pavers was no match for our specialized cleaning process.</p>
-                            <Link to="/services/Powerwashing" className="town-service-link">Learn about our paver cleaning</Link>
+                            <Button to="/services/Powerwashing" size="medium" >Learn about paver cleaning</Button>
                         </div>
                     </div>
                 </div>
