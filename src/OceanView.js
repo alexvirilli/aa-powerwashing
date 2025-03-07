@@ -15,7 +15,7 @@ import beforeWall from './images/wall1.webp';
 import afterWall from './images/wall2.webp';
 import beforeRoof from './images/roof1.webp';
 import afterRoof from './images/roof2.webp';
-
+import Button from './Button';
 import { Helmet } from 'react-helmet';
 
 function OceanView() {
@@ -98,7 +98,7 @@ function OceanView() {
                 <div className="town-hero-content">
                     <h1>Ocean View's Trusted Power Washing Service</h1>
                     <p>Specialized cleaning solutions for local properties</p>
-                    <Link to="/contact" className="town-cta-button">Get a Free Quote</Link>
+                    <Button to="/contact" size="medium" padding="1rem 2rem" margin="auto">Get A Free Quote</Button>
                 </div>
             </section>
 
@@ -162,7 +162,7 @@ function OceanView() {
                 <div className="town-cta-container">
                     <h2>Ready to Restore Your Ocean View Property?</h2>
                     <p>Our team is ready to help you protect your investment with our specialized cleaning services.</p>
-                    <Link to="/contact" className="town-cta-button">Get Your Free Quote Today</Link>
+                    <Button to="/contact" size="medium" margin="auto">Get A Free Quote</Button>
                 </div>
             </section>
         </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import ImageComparison from './ImageComparison';
 import './town-specific-landing-page.css';
+import Button from './Button';
 import { FaHome, FaLeaf, FaRoad, FaWarehouse, FaHandSparkles, FaTrash, FaMapMarkerAlt, FaAward, FaClock } from 'react-icons/fa';
 
 /* Images */
@@ -98,7 +99,7 @@ function CherryHill() {
                 <div className="town-hero-content">
                     <h1>Cherry Hill's Trusted Power Washing Service</h1>
                     <p>Specialized cleaning solutions for local properties</p>
-                    <Link to="/contact" className="town-cta-button">Get a Free Quote</Link>
+                    <Button to="/contact" size="large" padding="1rem 2rem" margin="auto">Get A Free Quote</Button>
                 </div>
             </section>
 
@@ -130,9 +131,11 @@ function CherryHill() {
                                 <div className="town-service-icon">{service.icon}</div>
                                 <h3 className="town-service-title">{service.title}</h3>
                                 <p className="town-service-description">{service.description}</p>
-                                <Link to={service.link} className="town-service-button">
+                                <Button to={service.link} size="small" margin="auto">Get Started</Button>
+
+                                {/* <Link to={service.link} className="town-service-button">
                                     Get Started
-                                </Link>
+                                </Link> */}
                             </div>
                         ))}
                     </div>
@@ -172,7 +175,7 @@ function CherryHill() {
                         <div className="town-comparison-text">
                             <h3>Paver Restoration</h3>
                             <p>Accumulated grime on these Cherry Hill pavers was no match for our specialized cleaning process.</p>
-                            <Link to="/services/Powerwashing" className="town-service-link">Learn about our paver cleaning</Link>
+                            <Button to="/services/Powerwashing" size="medium" >Learn about paver cleaning</Button>
                         </div>
                     </div>
                     <div className="town-comparison-item">
@@ -182,7 +185,7 @@ function CherryHill() {
                         <div className="town-comparison-text">
                             <h3>Deck Cleaning</h3>
                             <p>This Cherry Hill deck was restored to its original beauty, removing years of wear and weathering.</p>
-                            <Link to="/services/Powerwashing" className="town-service-link">Explore deck cleaning</Link>
+                            <Button to="/services/Powerwashing" size="medium" >Explore deck cleaning</Button>
                         </div>
                     </div>
                     <div className="town-comparison-item">
@@ -192,7 +195,7 @@ function CherryHill() {
                         <div className="town-comparison-text">
                             <h3>Home Exterior Cleaning</h3>
                             <p>Our soft washing technique safely removed buildup and mold from this Cherry Hill residence.</p>
-                            <Link to="/services/HouseWashing" className="town-service-link">View our home washing services</Link>
+                            <Button to="/services/HouseWashing" size="medium" >Learn about house washing solutions</Button>
                         </div>
                     </div>
                     <div className="town-comparison-item">
@@ -202,7 +205,7 @@ function CherryHill() {
                         <div className="town-comparison-text">
                             <h3>Roof Cleaning</h3>
                             <p>Algae and dark streaks were effectively removed from this Cherry Hill home's roof, extending its lifespan.</p>
-                            <Link to="/services/RoofCleaning" className="town-service-link">Discover roof cleaning options</Link>
+                            <Button to="/services/RoofCleaning" size="medium" >Learn about roof cleaning options</Button>
                         </div>
                     </div>
                 </div>
@@ -230,8 +233,8 @@ function CherryHill() {
                 <div className="town-cta-container">
                     <h2>Ready to Restore Your Cherry Hill Property?</h2>
                     <p>Our team is ready to help you protect your investment with our specialized cleaning services.</p>
-                    <Link to="/contact" className="town-cta-button">Get Your Free Quote Today</Link>
-                </div>
+                    <Button to="/contact" size="large" margin="auto" >Get your free quote today</Button>
+                    </div>
             </section>
         </div>
     );

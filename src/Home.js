@@ -154,7 +154,7 @@ function Home() {
                 <div className="landing-contact">
                     <h1>South Jersey's Premier Pressure Washing Service</h1>
                     {/* <Link to="/contact" className="contact-button1">Get a free quote</Link> */}
-                    <Button to="/contact" size="large" padding="1rem 2rem" margin="20px">Get A Free Quote</Button>
+                    <Button to="/contact" size="medium" padding="1rem 2rem" margin="20px">Get A Free Quote</Button>
                     
                 </div>
 
