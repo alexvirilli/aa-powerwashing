@@ -19,6 +19,8 @@ import wall2 from './images/wall2.webp';
 import roof1 from './images/roof1.webp';
 import roof2 from './images/roof2.webp';
 
+import ArticleCard from './ArticleCard';
+
 
 import { Helmet } from 'react-helmet';
 
@@ -153,6 +155,7 @@ function Home() {
 
                 <div className="landing-contact">
                     <h1>South Jersey's Premier Pressure Washing Service</h1>
+                    <h3>Licensed and Insured</h3>
                     {/* <Link to="/contact" className="contact-button1">Get a free quote</Link> */}
                     <Button to="/contact" size="medium" padding="1rem 2rem" margin="20px">Get A Free Quote</Button>
                     
