@@ -113,7 +113,7 @@ function Header() {
 
         <NavLink to="/gallery" className={({isActive}) => isActive ? "active" : ""} onClick={closeMenu}>Gallery</NavLink>
 
-        <NavLink to="/contact" className={({isActive}) => isActive ? "active" : ""} onClick={closeMenu}>Contact</NavLink>
+        <NavLink to="/contact" className={({isActive}) => isActive ? "active" : ""} onClick={closeMenu}>Quote</NavLink>
       </nav>
     </header>
   );
