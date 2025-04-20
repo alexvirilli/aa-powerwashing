@@ -12,6 +12,7 @@ import GutterCleaning from './GutterCleaning';
 import CommercialPowerwashing from './CommercialPowerwashing';
 import About from './About';
 import Footer from './Footer';
+import PrivacyPolicy from './PrivacyPolicy';
 
 
 import MargateCity from './MargateCity';
@@ -125,6 +126,9 @@ function App() {
           <Route path="/WashingtonTownship" element={<WashingtonTownship />}></Route>
           <Route path="/WestDeptford" element={<WestDeptford />}></Route>
           <Route path="/Swedesboro" element={<Swedesboro />}></Route>
+
+          <Route path="/PrivacyPolicy" element={<PrivacyPolicy />}></Route>
+
 
         </Routes>
         <Footer></Footer>
